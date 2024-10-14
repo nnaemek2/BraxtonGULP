@@ -1,0 +1,48 @@
+.tools-slider,
+.testimonials-slider
+  position: relative
+  overflow: hidden
+
+.mxd-swiper-pagination
+  &.swiper-pagination-bullets
+    position: relative
+    bottom: auto
+    left: auto
+    line-height: 0
+    margin-top: 2rem
+  .swiper-pagination-bullet
+    display: inline-block
+    width: 10px
+    height: 10px
+    border-radius: 5px
+    line-height: 0
+    background: var(--stroke-elements)
+    opacity: 1
+    transition: all 0.3s ease-in-out
+  .swiper-pagination-bullet-active
+    width: 10px
+    background-color: var(--accent)
+    +gradient-btn
+
+.swiper-testimonials
+  padding-bottom: 7rem
+  +MQ(XXXL)
+    padding-bottom: 8rem
+
+.mxd-slider-btn-square
+  +position(absolute, auto auto 0 auto)
+  width: 5rem
+  height: 5rem
+  margin: 0
+  &::after
+    display: none
+  +MQ(XXXL)
+    width: 6rem
+    height: 6rem
+
+.mxd-slider-btn-square-prev
+  left: 0
+.mxd-slider-btn-square-next
+  left: 6rem
+  +MQ(XXXL)
+    left: 7rem

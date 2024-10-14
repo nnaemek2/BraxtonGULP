@@ -1,0 +1,56 @@
+.numblock
+  padding: 1rem 1.25rem
+  margin-right: 1rem
+  border: 1px solid var(--stroke-elements)
+  background-color: var(--base)
+  border-radius: var(--_radius-s)
+  &:last-of-type
+    margin-right: 0
+
+.numblock__number
+  display: block
+  font: normal 700 2.25rem/1 var(--_font-accent)
+  font-variant-numeric: lining-nums
+  color: var(--t-bright)
+
+.numblock__descr
+  font: normal 700 calc(var(--_size) * 0.938)/1.2 var(--_font-default)
+  color: var(--t-muted)
+  margin-top: 0.375rem
+  +MQ(M)
+    margin-top: 0
+    margin-left: 0.375rem
+
+.achievements
+
+.achievements__item
+  width: 100%
+  +MQ(M)
+    width: 33.33333334%
+
+.achievements__card
+  height: 100%
+  padding: 3rem
+  background-color: var(--base)
+  border: 1px solid var(--stroke-elements)
+  border-radius: var(--_radius-xl)
+  text-align: center
+
+.achievements__number
+  font: normal 700 6rem/1 var(--_font-accent)
+  letter-spacing: -0.2rem
+  font-variant-numeric: lining-nums
+  +gradient-t
+  +MQ(XL)
+    font-size: 7rem
+  +MQ(XXXL)
+    font-size: 8rem
+
+.achievements__descr
+  font: normal 700 1.6rem/1.2 var(--_font-default)
+  color: var(--t-bright)
+  margin-top: 0.6rem
+  +MQ(XL)
+    font-size: 1.8rem
+  +MQ(XXXL)
+    font-size: 2rem

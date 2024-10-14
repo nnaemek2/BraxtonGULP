@@ -1,0 +1,61 @@
+.teaser
+  padding-top: 4rem
+  padding-bottom: 4.3rem
+  +MQ(M)
+    padding-top: 4.7rem
+    padding-bottom: 5.2rem
+  +MQ(XXXL)
+    padding-top: 5.2rem
+    padding-bottom: 5.7rem
+
+.teaser__text
+  font: normal 700 2.6rem/1.2 var(--_font-default)
+  font-variant-numeric: lining-nums
+  +gradient-t
+  +MQ(M)
+    font-size: 3rem
+    max-width: 62rem
+  +MQ(XXL)
+    font-size: 3.8rem
+    max-width: 80rem
+  +MQ(XXXL)
+    font-size: 4.4rem
+    max-width: 92rem
+  
+.contact-lines
+  
+.contact-lines__item
+  padding-top: 4.3rem
+  padding-bottom: 4.2rem
+  border-top: 1px solid var(--stroke-elements)
+  +MQ(M)
+    padding-top: 3.3rem
+    padding-bottom: 3.2rem
+  +MQ(L)
+    padding-bottom: 10.3rem
+  +MQ(XXL)
+    padding-top: 3.3rem
+    padding-bottom: 14.4rem
+  +MQ(XXXL)
+    padding-top: 3.3rem
+
+.contact-lines__data
+  margin-bottom: 1.7rem
+  &:last-of-type
+    margin-bottom: 0
+  +MQ(M)
+    margin-bottom: 0
+
+.contact-lines__title
+  font: normal 700 1.6rem/1.2 var(--_font-accent)
+  font-variant-numeric: lining-nums
+  color: var(--t-bright)
+  a
+    color: var(--t-bright)
+
+.contact-lines__text
+  font: normal 400 1.6rem/1.4 var(--_font-default)
+  font-variant-numeric: lining-nums
+  color: var(--t-muted)
+  a
+    color: var(--t-muted)

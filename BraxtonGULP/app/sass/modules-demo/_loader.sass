@@ -1,0 +1,55 @@
+.demo__loader
+  +position(fixed, 0 0 0 0)
+  z-index: 9999
+  background-color: var(--base-tint)
+  opacity: 1
+  visibility: visible
+  transition: all var(--_animspeed-slow) ease-in-out
+  &.loaded
+   background-color: var(--base)
+   opacity: 0
+   visibility: hidden
+
+.loader__content
+  position: absolute
+  +center
+  width: 40px
+  height: 60px
+  transition: opacity var(--_animspeed-medium) ease-in-out
+  opacity: 1
+  &.fade-out
+   opacity: 0
+
+.loader__box
+  width: 40px
+  height: 40px
+  +gradient-btn
+  animation: jump .5s linear infinite
+  border-radius: 10px
+
+@keyframes jump
+  17%
+   border-bottom-right-radius: 10px
+  25%
+   transform: translateY(9px) rotate(22.5deg)
+  50%
+    transform: translateY(18px) scale(1,.9) rotate(45deg)
+    border-bottom-right-radius: 40px
+  75%
+   transform: translateY(9px) rotate(67.5deg)
+  100%
+   transform: translateY(0) rotate(90deg)
+
+.loader__shadow
+  width: 40px
+  height: 5px
+  background-color: var(--base-shade)
+  position: absolute
+  top: 49px
+  left: 0
+  border-radius: 50%
+  animation: shadow .5s linear infinite
+
+@keyframes shadow
+  50%
+    transform: scale(1.2,1)

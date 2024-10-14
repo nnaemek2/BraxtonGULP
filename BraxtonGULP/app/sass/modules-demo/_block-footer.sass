@@ -1,0 +1,60 @@
+.demo__footer
+  background-color: var(--base)
+  background-repeat: no-repeat
+  background-position-x: center
+  background-position-y: bottom
+  background-size: 250%
+  background-image: url(../img/demo/2560x1440-bg-footer.webp)
+  +MQ(M)
+    background-size: 150%
+  +MQ(XL)
+    background-size: 100%
+
+.footer__content
+  position: relative
+  padding: 0 1.5rem
+  text-align: center
+  +MQ(M)
+    padding: 0 6rem
+  +MQ(XXL)
+    padding: 0 8rem
+  +MQ(XXXL)
+    padding: 0 10rem
+
+.footer__footercta
+  padding: 0 0 10rem 0
+  +MQ(M)
+    padding: 0 0 12rem 0
+  +MQ(XXL)
+    padding: 0 0 15rem 0
+
+.footercta__logo
+  margin-bottom: 2rem
+  a
+    display: inline-flex
+  img,
+  svg
+    width: auto
+    height: auto
+    margin: 0 auto
+
+.footercta__caption
+  margin-bottom: 2rem
+  p
+    max-width: 50rem
+
+.footercta__cta
+
+.footer__links
+  padding-bottom: 1.5rem
+  p
+    &:last-of-type
+      margin-top: 0.6rem 
+  +MQ(L)
+    +position(absolute, null null 0 0)
+    width: 100%
+    padding: 0 6rem 2rem 6rem
+  +MQ(XXL)
+    padding: 0 8rem 2rem 8rem
+  +MQ(XXXL)
+    padding: 0 10rem 2rem 10rem

@@ -1,0 +1,113 @@
+.gradient-background
+  +position(fixed, 0 null null 0)
+  width: 100%
+  height: 100vh
+  overflow: hidden
+
+.blur
+  position: absolute
+  z-index: 1
+  border-radius: 900px
+  filter: blur(clamp(40px, 7vw, 90px))
+  &:nth-of-type(1)
+    background: var(--gradient-one)
+    height: clamp(400px, 20vw, 60vw)
+    width: calc(clamp(400px, 30vw, 70vw) * 1.1)
+    top: -10vh
+    right: -5vw
+  &:nth-of-type(2)
+    background: var(--gradient-two)
+    height: clamp(300px, 16vw, 46vw)
+    width: calc(clamp(300px, 16vw, 56vw) * 0.75)
+    top: 5vh
+    right: 0vw
+  &:nth-of-type(3)
+    background: var(--gradient-three)
+    height: clamp(100px, 20vw, 20vw)
+    width: calc(clamp(100px, 20vw, 20vw) * 2)
+    top: -10vh
+    left: -10vw
+  
+.image-background
+  +position(absolute, 0 null null 0)
+  width: 100%
+  height: 110vh
+  overflow: hidden
+  background-position: center center
+  background-size: cover
+  background-repeat: no-repeat
+  
+.svg-background
+  +position(absolute, 0 null null 0)
+  width: 100%
+  height: 100%
+  overflow: hidden
+  &.loaded
+    .background__svg01
+      svg
+        opacity: 1
+        transform: translate3d(0,0,0)
+    .background__svg02
+      svg
+        opacity: 1
+        transform: translate3d(0,0,0)
+
+.background__svg01
+  position: absolute
+  top: -15vh
+  right: -30vw
+  width: 320px
+  height: 320px
+  svg
+    width: 100%
+    height: 100%
+    opacity: 0
+    transform: translate3d(50px,-50px,0)
+    transition: transform 0.8s var(--_animbezier), opacity 0.8s var(--_animbezier)
+  +MQ(M)
+    top: -15vh
+    right: -10vw
+    width: 465px
+    height: 465px
+  +MQ(L)
+    top: -17vh
+    right: -8vw
+  +MQ(XL)
+    top: -25vh
+    right: -6vw
+    width: 580px
+    height: 580px
+  +MQ(XXL)
+    top: -25vh
+    right: -8vw
+    width: 680px
+    height: 680px
+  +MQ(XXXL)
+    top: -45vh
+    right: -5vw
+    width: 880px
+    height: 880px
+
+.background__svg02
+  position: absolute
+  top: 60vh
+  left: -40vw
+  width: 320px
+  height: 320px
+  svg
+    width: 100%
+    height: 100%
+    opacity: 0
+    transform: translate3d(-50px,50px,0)
+    transition: transform 0.8s var(--_animbezier), opacity 0.8s var(--_animbezier)
+  +MQ(M)
+    top: 70vh
+    left: -20vw
+  +MQ(L)
+    top: 70vh
+    left: -8vw
+  +MQ(XXL)
+    top: 60vh
+    left: -8vw
+    width: 425px
+    height: 425px

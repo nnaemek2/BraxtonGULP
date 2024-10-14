@@ -1,0 +1,82 @@
+h1
+  font: normal 700 3.8rem/1.2 var(--_font-accent)
+  color: var(--t-accent)
+  +gradient-t
+  &.headline__title
+  +MQ(M)
+    font-size: 5rem
+    max-width: 600px
+  +MQ(XL)
+    font-size: 6rem
+  +MQ(XXXL)
+    font-size: 7rem
+    max-width: 700px
+
+.headline__subtitle
+  display: inline-flex
+  align-items: center
+  height: 3.4rem
+  padding: 0 1.4rem
+  border-radius: var(--_radius-s)
+  border: 1px solid var(--stroke-elements)
+  background-color: var(--base)
+  font: normal 700 1.3rem/3.3rem var(--_font-default)
+  margin-bottom: 1rem
+  svg,
+  span
+    display: block
+  svg
+    width: 1.1rem
+    height: 1.1rem
+  span
+    padding-top: 0.1rem
+    margin-left: 1rem
+  +MQ(M)
+    margin-bottom: 1.4rem
+  +MQ(XL)
+    margin-bottom: 1.7rem
+  +MQ(XXXL)
+    margin-bottom: 1.9rem
+
+.headline__btnholder
+  width: 100%
+  margin-top: 4rem
+  +MQ(S)
+    width: auto
+  +MQ(M)
+    margin-top: 4.6rem
+  +MQ(XL)
+    margin-top: 4.6rem
+    padding-bottom: 5rem
+  +MQ(XXXL)
+    margin-top: 5.1rem
+    padding-bottom: 6rem
+
+p
+  font: normal 400 1.8rem/1.4 var(--_font-default)
+  font-variant-numeric: lining-nums
+  color: var(--t-medium)
+  &.additional-text
+    font: normal 400 1.5rem/1 var(--_font-default)
+    color: var(--t-muted)
+    a
+      font-weight: 700
+      color: var(--t-bright)
+  +MQ(XXXL)
+    font-size: 2rem
+
+a
+  color: var(--t-bright)
+
+.text-link-bold
+  color: inherit
+  color: var(--t-bright)
+  text-decoration: none
+  background: linear-gradient(to right, rgba(0,0,0, 0.0), rgba(0,0,0, 0.0)), linear-gradient(to right, var(--accent), var(--secondary))
+  background-size: 100% 1px, 0 1px
+  background-position: 100% 100%, 0 100%
+  background-repeat: no-repeat
+  transition: background-size 400ms, color 300ms
+  .no-touch &:hover
+    color: var(--t-bright)
+    background-size: 0 1px, 100% 1px

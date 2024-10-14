@@ -1,0 +1,42 @@
+.cards
+  position: relative
+
+.cards__item
+  position: relative
+  overflow: hidden
+  cursor: pointer
+  height: 520px
+  +MQ(XXL)
+    height: 620px
+
+.cards__card
+  height: 100%
+  background-color: var(--base)
+  border: 1px solid var(--stroke-elements)
+  border-radius: var(--_radius-xl)
+  overflow: hidden
+
+.cards__descr
+  padding: 3rem
+  +MQ(XXL)  
+    padding: 5rem
+
+.cards__title
+
+.cards__tags
+  margin-top: 0.7rem
+  +MQ(XXL)
+    margin-top: 0.8rem
+  +MQ(XXXL)
+    margin-top: 0.9rem
+
+.cards__text
+  margin-top: 2.3rem
+
+.cards__image
+  position: relative
+  flex: 1
+  img
+    object-fit: cover
+    max-width: 100%
+    max-height: 100%

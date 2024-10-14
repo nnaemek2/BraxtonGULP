@@ -1,0 +1,62 @@
+.testimonials-card
+  padding: 3rem
+  background-color: var(--base)
+  border: 1px solid var(--stroke-elements)
+  border-radius: var(--_radius-xl)
+  +MQ(XXL)
+    padding: 5rem
+
+.testimonials-card__tauthor
+
+.testimonials-card__descr
+  max-width: 1050px
+  margin-top: 2rem
+  +MQ(XXL)
+    margin-top: 3.9rem
+
+.testimonials-card__btnholder
+  margin-top: 2rem
+  +MQ(XXL)
+    margin-top: 3.4rem
+
+.tauthor__avatar
+  width: 60px
+  min-width: 60px
+  height: 60px
+  margin-right: 2rem
+  border-radius: var(--_radius-m)
+  overflow: hidden
+  +MQ(M)
+    width: 100px
+    min-width: 100px
+    height: 100px
+    border-radius: var(--_radius-l)
+
+.tauthor__info
+
+.tauthor__name
+  font: normal 700 2.4rem/1.05 var(--_font-accent)
+  color: var(--t-bright)
+  +MQ(M)
+    font-size: 2.6rem
+  +MQ(XXL)
+    font-size: 3rem
+
+.tauthor__position
+  font: normal 400 1.5rem/1.4 var(--_font-default)
+  color: var(--t-medium)
+  a
+    font-weight: 700
+    color: var(--t-bright)
+  +MQ(M)
+    margin-top: 0.2rem
+
+.tauthor__rating
+  margin: 1rem 0 0.6rem 0
+  i
+    display: block
+    margin-right: 0.8rem
+    font-size: 1.8rem
+    +gradient-t
+    &:last-of-type
+      margin-right: 0

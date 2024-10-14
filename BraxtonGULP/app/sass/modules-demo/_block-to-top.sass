@@ -1,0 +1,35 @@
+.to-top
+  +position(fixed, null 1.5rem 6.5rem null)
+  z-index: 3
+  opacity: 0
+  visibility: hidden
+  transition: opacity 0.3s 0s, visibility 0s 0.3s
+  i
+    font-size: 1.6rem
+  &.is-visible, &.fade-out
+    transition: opacity 0.3s 0s, visibility 0s 0s
+  &.is-visible
+    visibility: visible
+    opacity: 1
+  &.fade-out
+    opacity: 1
+  +MQ(M)
+    +position(fixed, null 6rem 1.5rem null)
+  +MQ(L)
+    +position(fixed, null 6rem 4.5rem null)
+  +MQ(XL)
+    +position(fixed, null 6rem 4.5rem null)
+    .no-touch &:hover
+      opacity: 1
+  +MQ(XXL)
+    +position(fixed, null 8rem 4.5rem null)
+  +MQ(XXXL)
+    +position(fixed, null 10rem 4.5rem null)
+    width: 5rem
+    height: 5rem
+    &:before
+      border-radius: 2.2rem
+    i
+      font-size: 1.6rem
+    i, span
+      line-height: 5rem

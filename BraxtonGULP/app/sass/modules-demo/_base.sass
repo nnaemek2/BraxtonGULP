@@ -1,0 +1,140 @@
+:root
+  /* light color scheme */
+  --glass-bg--light: rgba(112,89,226,0.08)
+  --glass-stroke-top--light: rgba(255,255,255,0.4)
+  --glass-stroke-bottom--light: rgba(255,255,255,0.36)
+  --glass-filter--light: drop-shadow(0 0 55px rgb(74 38 188 / 0.25))
+  --bg-image-one--light: url(../img/demo/screens/svg-light.webp)
+  --bg-image-two--light: url(../img/demo/screens/image-light.webp)
+  --bg-image-three--light: url(../img/demo/screens/solid-color-light.webp)
+  --bg-image-four--light: url(../img/demo/screens/gradient-light.webp)
+  /* dark color scheme */
+  --glass-bg--dark: rgba(255,255,255,0.02)
+  --glass-stroke-top--dark: rgba(255,255,255,0.08)
+  --glass-stroke-bottom--dark: rgba(255,255,255,0.05)
+  --glass-filter--dark: drop-shadow(0 0 55px rgb(137 102 221 / 0.15))
+  --bg-image-one--dark: url(../img/demo/screens/svg-dark.webp)
+  --bg-image-two--dark: url(../img/demo/screens/image-dark.webp)
+  --bg-image-three--dark: url(../img/demo/screens/solid-color-dark.webp)
+  --bg-image-four--dark: url(../img/demo/screens/gradient-dark.webp)
+
+@media ( prefers-color-scheme: light )
+  :root
+    --glass-bg: var(--glass-bg--light)
+    --glass-stroke-top: var(--glass-stroke-top--light)
+    --glass-stroke-bottom: var(--glass-stroke-bottom--light)
+    --glass-filter: var(--glass-filter--light)
+    --bg-image-one: var(--bg-image-one--light)
+    --bg-image-two: var(--bg-image-two--light)
+    --bg-image-three: var(--bg-image-three--light)
+    --bg-image-four: var(--bg-image-four--light)
+
+@media ( prefers-color-scheme: dark )
+  :root
+    --glass-bg: var(--glass-bg--dark)
+    --glass-stroke-top: var(--glass-stroke-top--dark)
+    --glass-stroke-bottom: var(--glass-stroke-bottom--dark)
+    --glass-filter: var(--glass-filter--dark)
+    --bg-image-one: var(--bg-image-one--dark)
+    --bg-image-two: var(--bg-image-two--dark)
+    --bg-image-three: var(--bg-image-three--dark)
+    --bg-image-four: var(--bg-image-four--dark)
+
+[color-scheme="light"]
+  --glass-bg: var(--glass-bg--light)
+  --glass-stroke-top: var(--glass-stroke-top--light)
+  --glass-stroke-bottom: var(--glass-stroke-bottom--light)
+  --glass-filter: var(--glass-filter--light)
+  --bg-image-one: var(--bg-image-one--light)
+  --bg-image-two: var(--bg-image-two--light)
+  --bg-image-three: var(--bg-image-three--light)
+  --bg-image-four: var(--bg-image-four--light)
+
+[color-scheme="dark"]
+  --glass-bg: var(--glass-bg--dark)
+  --glass-stroke-top: var(--glass-stroke-top--dark)
+  --glass-stroke-bottom: var(--glass-stroke-bottom--dark)
+  --glass-filter: var(--glass-filter--dark)
+  --bg-image-one: var(--bg-image-one--dark)
+  --bg-image-two: var(--bg-image-two--dark)
+  --bg-image-three: var(--bg-image-three--dark)
+  --bg-image-four: var(--bg-image-four--dark)
+  
+*, *::before, *::after
+  box-sizing: border-box
+
+button:active, button:focus
+  outline: none !important
+
+button::-moz-focus-inner
+  border: 0 !important
+
+input::-moz-focus-inner
+  border: 0 !important
+
+a:focus,
+button:focus,
+input:focus,
+textarea:focus
+  -webkit-tap-highlight-color: transparent
+
+input,
+textarea,
+button,
+select,
+a
+  -webkit-tap-highlight-color: transparent
+
+::selection
+  background-color: var(--secondary-rgba)
+  color: var(--t-bright)
+  text-shadow: none
+
+::-webkit-scrollbar
+  display: none
+  width: 5px
+  background: var(--base-shade)
+  +MQ(M)
+    display: block
+
+::-webkit-scrollbar-track
+  background-color: var(--base-shade)
+
+::-webkit-scrollbar-thumb
+  background-color: var(--secondary)
+  +gradient-bottom
+  border-radius: 10px
+
+html
+  width: 100%
+  height: 100%
+  font-family: sans-serif
+  font-size: 62.5%
+  +font-smoothing
+
+body
+  position: relative
+  min-width: 360px
+  overflow-x: hidden !important
+  font: normal 400 var(--_size)/1.4 var(--_font-default)
+  text-rendering: optimizeLegibility
+  background-color: var(--base)
+  color: var(--t-medium)
+
+section
+  position: relative
+  min-width: 360px
+
+a
+  text-decoration: none
+  outline: 0
+  -webkit-tap-highlight-color: rgba(0,0,0, 0)
+  transition: all var(--_animspeed-medium) var(--_animbezier)
+
+img
+  display: block
+  width: 100%
+  height: auto
+
+.overflow-hidden
+  overflow: hidden !important

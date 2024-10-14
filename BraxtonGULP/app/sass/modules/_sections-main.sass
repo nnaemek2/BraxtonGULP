@@ -1,0 +1,94 @@
+.main
+  position: relative
+  height: auto
+  padding: 6rem 0
+  +MQ(M)
+    padding: 7.5rem 0
+  +MQ(L)
+    height: calc( 100vh - 2rem )
+    padding: 0
+  +MQ(XXL)
+    height: calc( 100vh - 8rem )
+
+.headline
+  position: relative
+  padding: 0 1.5rem
+  +MQ(M)
+    padding: 0 6rem
+  +MQ(L)
+    +position(absolute, null null 4rem 0)
+    width: 100%
+    padding: 0 3rem
+  +MQ(XL)
+    padding: 0 6rem 0 3rem
+  +MQ(XXL)
+    bottom: 2rem
+    padding: 0 8rem 0 5rem
+  +MQ(XXXL)
+    padding: 0 10rem 0 5rem
+
+.headline__title
+  +MQ(L)
+    max-width: 560px
+  +MQ(XL)
+    max-width: 660px
+  +MQ(XXL)
+    max-width: 760px
+  +MQ(XXXL)
+    max-width: 900px
+
+.rotating-btn
+  position: relative
+  width: 100%
+  height: auto
+  padding: 0 1.5rem
+  margin-top: 5rem
+  +MQ(M)
+    padding: 0 6rem
+    margin-top: 6rem
+  +MQ(L)
+    width: auto
+    padding: 0
+    margin-top: 0
+    +position(absolute, null 3rem 4rem null)
+  +MQ(XL)
+    right: 6rem
+  +MQ(XXL)
+    bottom: 2rem
+    right: 8rem
+  +MQ(XXXL)
+    right: 10rem
+
+.rotating-btn__link
+  display: inline-flex
+  justify-content: center
+  align-items: center
+  position: relative
+  width: 120px
+  height: 120px
+  color: var(--t-bright)
+  font-size: 2.2rem
+  i
+    display: inline-flex
+    position: relative
+    overflow: hidden
+  svg
+    display: block
+    +position(absolute, 0 null null 0)
+    width: 120px
+    height: 120px
+    text
+      fill: var(--t-bright)
+      font-family: var(--_font-default)
+      font-weight: 700
+      font-size: 1.2rem
+      letter-spacing: 0.05rem
+      text-transform: uppercase
+      transition: var(--_animspeed-medium) var(--_animbezier)
+  +MQ(XXXL)
+    width: 140px
+    height: 140px
+    font-size: 2.6rem
+    svg
+      width: 140px
+      height: 140px

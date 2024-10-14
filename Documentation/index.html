@@ -1,0 +1,742 @@
+<!DOCTYPE html><html class="no-js" lang="en" dir="ltr"><head><meta charset="utf-8"><title>Braxton - Personal Portfolio and Resume HTML Template Documentation</title><meta name="description" content="Braxton - Personal Portfolio and Resume HTML Template Documentation"><meta name="keywords" content="mix_design, coming soon, under construction, template, landing page, portfolio, one page, responsive, html5, css3, creative, clean, agency, personal page"><meta name="author" content="mix_design"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"><link rel="icon" href="img/favicon/favicon.ico" sizes="any"><link rel="icon" href="img/favicon/icon.svg" type="image/svg+xml"><link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png"><link rel="icon" type="image/png" sizes="192x192" href="img/favicon/android-icon-192.png"><link rel="icon" type="image/png" sizes="512x512" href="img/favicon/android-icon-512.png"><meta property="og:image" content="img/favicon/og-image.jpg"><style>.loader{position:fixed;top:0;right:0;bottom:0;left:0;z-index:9999;background-color:#161616;opacity:1;visibility:visible;-webkit-transition:all .6s ease-in-out;-o-transition:all .6s ease-in-out;-moz-transition:all .6s ease-in-out;transition:all .6s ease-in-out}.loader.loaded{opacity:0;visibility:hidden}.loader__content{position:absolute;left:50%;top:50%;bottom:auto;right:auto;-webkit-transform:translateX(-50%) translateY(-50%);-moz-transform:translateX(-50%) translateY(-50%);-ms-transform:translateX(-50%) translateY(-50%);transform:translateX(-50%) translateY(-50%)}.loader__logo{width:100px}.loader__logo img{display:block;width:100%;height:auto}@-webkit-keyframes fadeIn{from{opacity:0}to{opacity:1}}@-moz-keyframes fadeIn{from{opacity:0}to{opacity:1}}@keyframes fadeIn{from{opacity:0}to{opacity:1}}.fadeIn{-webkit-animation:fadeIn .6s 1;-moz-animation:fadeIn .6s 1;animation:fadeIn .6s 1;-webkit-animation-fill-mode:both;-moz-animation-fill-mode:both;animation-fill-mode:both}@-webkit-keyframes fadeOut{from{opacity:1}to{opacity:0}}@-moz-keyframes fadeOut{from{opacity:1}to{opacity:0}}@keyframes fadeOut{from{opacity:1}to{opacity:0}}.fadeOut{-webkit-animation:fadeOut .6s 1;-moz-animation:fadeOut .6s 1;animation:fadeOut .6s 1;-webkit-animation-fill-mode:both;-moz-animation-fill-mode:both;animation-fill-mode:both}</style><link rel="stylesheet" type="text/css" href="css/plugins.min.css"><link rel="stylesheet" type="text/css" href="css/main.min.css"><meta name="theme-color" content="#111111"><meta name="msapplication-navbutton-color" content="#111111"><meta name="apple-mobile-web-app-status-bar-style" content="#111111"></head><body class="overflow-hidden line-numbers"><!-- IE support --><!--[if lt IE 9]>
+<script src="libs/es5-shim.min.js"></script>
+<script src="libs/html5shiv.min.js"></script>
+<script src="libs/html5shiv-printshiv.min.js"></script>
+<script src="libs/respond.min.js"></script>
+<![endif]-->
+<!-- loader --><div class="loader">
+  <div class="loader__content">
+    <div class="loader__logo fadeIn">
+      <img src="img/logo.svg" alt="Braxton - Personal Portfolio and Resume HTML Template Documentation">
+    </div>
+  </div>
+</div>
+<!-- header--><header class="header">
+  <div class="header__logoblock">
+    <div class="logoblock__name">
+      <a href="https://mixdesign.club/themeforest/braxton" target="_blank">
+        Braxton
+      </a>
+    </div>
+    <div class="logoblock__descr">
+      <p>Braxton - Personal Portfolio and Resume HTML Template Documentation</p>
+    </div>
+  </div>
+  <div class="header__buttons">
+    <a href="#0" class="button button-outline button-mobile-square" target="_blank">
+      <i class="fas fa-shopping-cart"></i>
+      <span class="button-caption">Purchase Now</span>
+    </a>
+    <a href="https://mixdesign.club/themeforest/braxton/" class="button button-solid button-mobile-square" target="_blank">
+      <i class="fas fa-eye"></i>
+      <span class="button-caption">Live Preview</span>
+    </a>
+  </div>
+</header>
+<!-- chapters--><section id="docs"><div class="container-fluid p-0"><div class="row no-gutters"><div class="docs-navigation affix" id="navbar"><ul class="nav nav-pills nav-stacked"><li><a href="#introduction">Introduction</a></li><li><a href="#installation">Installation</a></li><li><a href="#files-structure">Files Structure</a><ul class="inner-nav"><li><a class="inner-link" href="#demo-files">Demo Pages</a></li><li><a class="inner-link" href="#html-structure">HTML Structure</a></li><li><a class="inner-link" href="#css-structure">CSS Files</a></li><li><a class="inner-link" href="#js-libs">JS Libraries</a></li></ul></li><li><a href="#fonts">Fonts</a><ul class="inner-nav"><!--lia(href="#customfonts" class="inner-link") Custom Fonts--><li><a class="inner-link" href="#googlefonts">Google Fonts</a></li><!--lia(href="#liningnums" class="inner-link") Lining Nums Font
+--><li><a class="inner-link" href="#phosphor">Phosphor Icons</a></li><li><a class="inner-link" href="#fontawesome">Fontawesome</a></li><!--lia(href="#ionicons" class="inner-link") Ionicons--></ul></li><li><a href="#favicon">Favicon and Apple Touch Icons</a></li><li><a href="#customization">Customization</a><ul class="inner-nav"><li><a class="inner-link" href="#preloader">Preloader</a></li><li><a class="inner-link" href="#colors">Colors</a></li><li><a class="inner-link" href="#logo">Logo</a></li><li><a class="inner-link" href="#images">Images</a></li><li><a class="inner-link" href="#header">Header and Navigation</a></li><!--lia(href="#menu" class="inner-link") Navigation Menu--><li><a class="inner-link" href="#headline">Headline</a></li></ul></li><li><a href="#plugins">Plugins</a><ul class="inner-nav"><!--lia(href="#countdown" class="inner-link") Countdown--><!--lia(href="#typedjs" class="inner-link") Animated Headline
+--><!--lia(href="#textillate" class="inner-link") Animated Headline--><li><a class="inner-link" href="#swiper">Swiper Slider</a></li><!--lia(href="#skillbars" class="inner-link") Skillbars--><!--lia(href="#magnific" class="inner-link") Magnific Popup--><li><a class="inner-link" href="#gallery">Photoswipe Gallery</a></li></ul></li><li><a href="#backgrounds">Animated Backgrounds</a><ul class="inner-nav"><li><a class="inner-link" href="#svgObjects">SVG Objects</a></li><li><a class="inner-link" href="#parallaxImage">Parallax Image</a></li><li><a class="inner-link" href="#animatedGradients">Animated Gradients</a></li><!--lia(href="#particles" class="inner-link") Particles--><!--lia(href="#snow" class="inner-link") Snow--><!--lia(href="#space" class="inner-link") Space--><!--lia(href="#triangles" class="inner-link") Triangles--><!--lia(href="#nightsky" class="inner-link") Night Sky--><!--lia(href="#sunshinebokeh" class="inner-link") Sunshine Bokeh
+--><!--lia(href="#polygons" class="inner-link") Polygons--><!--lia(href="#kenburns" class="inner-link") Kenburns--><!--lia(href="#video" class="inner-link") Youtube Video--><!--lia(href="#video-local" class="inner-link") HTML5 Video--><!--lia(href="#clouds" class="inner-link") Floating Clouds--><!--lia(href="#sparkles" class="inner-link") Sparkles--></ul></li><li><a href="#forms">Forms</a><ul class="inner-nav"><!--lia(href="#subscription-form" class="inner-link") Mailchimp Subscription Form--><li><a class="inner-link" href="#contact-forms">Contact Form</a></li></ul></li><!--lia(href="#google-maps") Google Maps--><li><a href="#gulp-project">BraxtonGULP</a></li><li><a href="#changelog">Changelog</a></li><li><a href="#credits">Credits</a></li></ul></div><div class="docs-content"><div class="headline">
+  <h1>Braxton - Personal Portfolio and Resume HTML Template Documentation</h1>
+  <p class="help-text">
+    by:
+    <a href="https://1.envato.market/EKA9WD" target="_blank">mix_design</a>
+    <br>
+    version: 1.0.0
+    <br>
+    created: 12.03.2024
+    <br>
+    last update: 12.03.2024
+  </p>
+</div>
+<div class="docs__item" id="introduction">
+  <div class="docs__title">
+    <p class="number">01</p>
+    <h2 class="title">Introduction</h2>
+  </div>
+  <div class="docs__content">
+    <p>
+      Thank you for choosing Braxton - personal portfolio and resume HTML template. We have prepared detailed 
+      documentation to make Braxton 
+      customization an easy task for you.
+      If you have any questions that are beyond the scope of this help file, you can email us on
+      <span>
+        <a href="mailto:support@mixdesign.club" target="_blank">support@mixdesign.club</a>.
+      </span>
+    </p>
+    <p> We would be very happy if you could rate this item
+      <span>
+        <a href="https://themeforest.net/downloads" target="_blank">here</a>
+      </span>
+      with 5 stars. Your feedback is very important so
+      <span>
+        <a href="https://themeforest.net/user/mix_design" target="_blank">write us a line</a>
+      </span> 😀!
+    </p>
+  </div>
+</div>
+<div class="docs__item" id="installation">
+  <div class="docs__title">
+    <p class="number">02</p>
+    <h2 class="title">Installation</h2>
+  </div>
+  <div class="docs__content">
+    <p>Follow the steps below to setup your site template:</p>
+    <ol>
+      <li>
+        <p>In order to start working with Braxton unzip the downloaded package and open <span>HTML</span> folder to find all 
+          ready-to-use template files.
+          Choose one of the demo <span>*.html</span> files (any ready-to-use demo you like) and rename it to <span>index.html</span>.
+        </p>
+      </li>
+      <li>
+        <p>Next you'll need to prepare a project for customization. Below is a list of files and folders that are required 
+          in the root directory of your project:</p>
+        <ul>
+          <li><code>index.html</code> - your chosen <span>*.html</span> file (renamed already);</li>
+          <li><code>css</code> folder - stylesheet files;</li>
+          <li><code>js</code> folder - JavaScript files;</li>
+          <li><code>fonts</code> folder - icon fonts files;</li>
+          <li><code>img</code> folder for project images and favicon;</li>
+          <!--<li><code>video</code> folder - project video files;</li>-->
+          <li><code>mail.php</code> file for sending e-mails;</li>
+          <li><code>.htaccess</code>  - this file contain rules for files caching on web server;</li>
+        </ul>
+      </li>
+      <li>
+        <p>The other files can be used according to your preferences.</p>
+      </li>
+      <li>
+        <p>Your project is ready to go! Now you can start adding your texts, images and video to your new awesome website.</p>
+      </li>
+      <li>
+        <p>After the customization is over, you'll need to upload the project files to your hosting web server using FTP 
+          client or cPanel interface in order to use it on your website.
+        </p>
+      </li>
+    </ol>
+  </div>
+</div>
+<div class="docs__item" id="files-structure"><div class="docs__title"><p class="number">03</p><h2 class="title">Files Structure</h2></div><div class="docs__content"><p>After downloading and extracting template package you will find 3 folders:</p>
+<ul>
+  <li><span>HTML: </span>ready to use HTML template;</li>
+  <li><span>BraxtonGULP: </span>if you want to totally customize Braxton, you can use this template;</li>
+  <li><span>Documentation: </span>this help file.</li>
+</ul>
+<p>This section describes
+  <code>HTML</code>
+  folder structure. More about
+  <code>BraxtonGULP</code>
+  folder structure you can find out in
+  <span><a href="#gulp-project">BraxtonGULP</a></span>
+  section.
+</p>
+<p>Braxton is one page HTML template. So, mostly you will need one
+  <code>*.html</code>
+  file and supporting
+  <code>*.css</code>,
+  <code>*.js</code>,
+  <code>*.php</code>
+  files with some images. All the directories and files are well organized as it shown on the image bellow.
+</p>
+<img src="img/structure/1.jpg" alt="Files Structure Image">
+<ul>
+  <li>all HTML files are located in the root directory;</li>
+  <li>separate folders are created for CSS files, JavaScript files, fonts, images and video;</li>
+  <li><code>source-files</code> folder contains all expanded CSS files, expanded JavaScript files, plugins and components files;</li>
+  <li><code>mail.php</code> file for sending e-mails is located in the root directory;</li>
+  <li><code>.htaccess</code> file is located in the root directory. This file contain rules for files caching on web server.</li>
+</ul>
+<div id="demo-files" class="content__item">
+  <h3>Demo Pages</h3>
+  <p>Braxton is one page HTML template and comes with dark and light color themes and 4 ready-to-use demo pages:</p>
+
+  <div class="container-fluid p-0 demo-container">
+    <div class="row no-gutters">
+      <div class="col-xs-12 col-sm-6 col-lg-6">
+        <a class="demo-item" href="https://mixdesign.club/themeforest/braxton/index-svg.html" target="_blank">
+          <img src="img/structure/demos/1.webp" alt="Braxton Demo Image">
+          <span>SVG Objects Background</span>
+        </a>
+      </div>
+      <div class="col-xs-12 col-sm-6 col-lg-6">
+        <a class="demo-item" href="https://mixdesign.club/themeforest/braxton/index-image.html" target="_blank">
+          <img src="img/structure/demos/2.webp" alt="Braxton Demo Image">
+          <span>Parallax Image Background</span>
+        </a>
+      </div>
+      <div class="col-xs-12 col-sm-6 col-lg-6">
+        <a class="demo-item" href="https://mixdesign.club/themeforest/braxton/index-solid-color.html" target="_blank">
+          <img src="img/structure/demos/3.webp" alt="Braxton Demo Image">
+          <span>Solid Color Background</span>
+        </a>
+      </div>
+      <div class="col-xs-12 col-sm-6 col-lg-6">
+        <a class="demo-item" href="https://mixdesign.club/themeforest/braxton/index-gradient.html" target="_blank">
+          <img src="img/structure/demos/4.webp" alt="Braxton Demo Image">
+          <span>Animated Gradients Background</span>
+        </a>
+      </div>
+    </div>
+  </div>
+
+</div>
+<div class="content__item" id="html-structure">
+  <h3>HTML structure</h3>
+  <p>Braxton has a simple and easy to customize structure based on
+    <a href="https://getbootstrap.com/" target="_blank">Bootstrap 5.3.2 Grid</a>.
+    Here is a sample page structure:
+  </p>
+  <pre>
+    <code class="language-html">
+      &lt;!DOCTYPE html&gt;
+      &lt;html lang=&quot;en&quot; dir=&quot;ltr&quot;&gt;
+
+        &lt;head&gt;
+          Meta tags, Title, Favicon and Icons, Facebook Metadata, CSS, Custom Browser Color
+        &lt;/head&gt;
+
+        &lt;body&gt;
+
+          &lt;!-- Loader Start --&gt;
+          &lt;div id=&quot;loader&quot; class=&quot;loader&quot;&gt;
+            ...
+          &lt;/div&gt;
+          &lt;!-- Loader End --&gt;
+
+          &lt;!-- Header Start --&gt;
+          &lt;header id=&quot;header&quot; class=&quot;header d-flex justify-content-between&quot;&gt;
+            ...
+          &lt;/header&gt;
+          &lt;!-- Header End --&gt;
+
+          &lt;!-- Avatar Side Block Start --&gt;
+          &lt;div id=&quot;avatar&quot; class=&quot;avatar&quot;&gt;
+            ...
+          &lt;/div&gt;
+          &lt;!-- Avatar Side Block End --&gt;
+
+          &lt;!-- Page Content Start --&gt;
+          &lt;div id=&quot;content&quot; class=&quot;content&quot;&gt;
+            &lt;div class=&quot;content__wrapper&quot;&gt;
+
+              &lt;!-- Intro Section Start --&gt;
+              &lt;section id=&quot;home&quot; class=&quot;main intro&quot;&gt;
+                ...
+              &lt;/section&gt;
+              &lt;!-- Intro Section End --&gt;
+
+              &lt;!-- Portfolio Section Start --&gt;
+              &lt;section id=&quot;portfolio&quot; class=&quot;inner inner-first portfolio&quot;&gt;
+                ...
+              &lt;/section&gt;
+              &lt;!-- Portfolio Section End --&gt;
+
+              &lt;!-- About Section Start --&gt;
+              &lt;section id=&quot;about&quot; class=&quot;inner about&quot;&gt;
+                ...
+              &lt;/section&gt;
+              &lt;!-- About Section End --&gt;
+
+              &lt;!-- Resume Section Start --&gt;
+              &lt;section id=&quot;resume&quot; class=&quot;inner resume&quot;&gt;
+                ...
+              &lt;/section&gt;
+              &lt;!-- Resume Section End --&gt;
+
+              &lt;!-- Contact Section Start --&gt;
+              &lt;section id=&quot;contact&quot; class=&quot;inner contact&quot;&gt;
+                ...
+              &lt;/section&gt;
+              &lt;!-- Contact Section End --&gt;
+
+            &lt;/div&gt;
+          &lt;/div&gt;
+          &lt;!-- Page Content End --&gt;
+
+          &lt;!-- Root element of PhotoSwipe. Must have class pswp. --&gt;
+          &lt;div class=&quot;pswp&quot; tabindex=&quot;-1&quot; role=&quot;dialog&quot; aria-hidden=&quot;true&quot;&gt;
+            ...
+          &lt;/div&gt;
+
+          &lt;!-- Load Scripts Start --&gt;
+          &lt;script src=&quot;js/libs.min.js&quot;&gt;&lt;/script&gt;
+          &lt;script src=&quot;js/app.js&quot;&gt;&lt;/script&gt;
+          &lt;script src=&quot;js/gallery-init.js&quot;&gt;&lt;/script&gt;
+          &lt;!-- Load Scripts End --&gt;
+          
+        &lt;/body&gt;
+
+      &lt;/html&gt;
+    </code>
+  </pre>
+</div>
+<div class="content__item" id="css-structure">
+  <h3>CSS Files</h3>
+  <p>Braxton template CSS files have a well-organized structure and a table of contents, as you can see on image below:</p>
+  <img src="img/structure/css.jpg" alt="CSS Structure Image">
+  <p>All CSS files are placed in
+    <code>css</code>
+    folder and have to be included in the
+    <code>&lt;head&gt;</code>
+    tag.
+    Braxton uses uncompressed CSS files.
+    If you want to improve Google PageSpeed Insights performance, you can use minificated files from
+    <code>source-files &#8594; braxton-css-min-files</code>.
+  </p>
+
+  <pre>
+    <code class="language-html">
+      &lt;!-- Template Styles Start--&gt;
+      &lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;css/loaders/loader.css&quot;&gt;
+      &lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;css/plugins.css&quot;&gt;
+      &lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;css/main.css&quot;&gt;
+      &lt;!-- Template Styles End--&gt;
+    </code>
+  </pre>
+
+  <p>CSS files that have to be included in chosen <code>.html</code> file:</p>
+  <ul>
+    <li>
+      <code>loader.css</code>
+    </li>
+    <li>
+      <code>plugins.css</code>
+    </li>
+    <li>
+      <code>main.css</code>
+    </li>
+  </ul>
+  <p>If you want to customize CSS styles, We recommend to create your own
+    <code>custom.css</code>
+    file and include it to
+    <span>Template Styles</span>
+    section of the
+    <span>HTML</span>
+    file. This solution will help you in future updates.
+  </p>
+  <!--<p class="help-text">* - Preloader color name</p>-->
+</div>
+<div class="content__item" id="js-libs">
+  <h3>JavaScript Libraries</h3>
+
+  <p>All JavaScript files are placed in
+    <code>js</code>
+    folder and have to be included before the
+    <code>&lt;/body&gt;</code>
+    tag.
+  </p>
+
+  <ul>
+    <li><code>libs.min.js</code> - all JavaScript libraries that are necessary for Braxton proper work, are compiled in this file;</li>
+    <li><code>gallery-init.js</code> - for photoswipe gallery initialization;</li>
+    <li><code>app.js</code> - includes other scripts calls and settings;</li>
+  </ul>
+
+  <pre>
+    <code class="language-html">
+      &lt;!-- Load Scripts Start--&gt;
+      &lt;script src=&quot;js/libs.min.js&quot;&gt;&lt;/script&gt;
+      &lt;script src=&quot;js/gallery-init.js&quot;&gt;&lt;/script&gt;
+      &lt;script src=&quot;js/app.js&quot;&gt;&lt;/script&gt;
+      &lt;!-- Load Scripts End--&gt;
+    </code>
+  </pre>
+
+  <p>We used minificated
+    <code>libs.min.js</code>
+    file to add all necessary JavaScript libraries to this template. The file contains:
+  </p>
+
+  <ul>
+    <li>
+      <a href="https://jquery.com/" target="_blank">jQuery</a>
+    </li>
+    <li>
+      <a href="https://modernizr.com/" target="_blank">Modernizr</a>
+    </li>
+    <li>
+      <a href="https://gsap.com/" target="_blank">GSAP</a>
+    </li>
+    <li>
+      <a href="https://gsap.com/docs/v3/Plugins/ScrollTrigger/" target="_blank">GSAP ScrollTrigger</a>
+    </li>
+    <li>
+      <a href="https://getbootstrap.com/" target="_blank">Bootstrap JS Components</a>
+    </li>
+    <li>
+      <a href="https://lenis.studiofreight.com/" target="_blank">Lenis Smooth Scroll</a>
+    </li>
+    <li>
+      <a href="https://github.com/desandro/imagesloaded" target="_blank">imagesLoaded</a>
+    </li>
+    <li>
+      <a href="https://swiperjs.com/" target="_blank">Swiper Slider</a>
+    </li>
+    <!--<li>
+      <a href="https://vincentgarreau.com/particles.js/" target="_blank">Particles.js</a>
+    </li>-->
+    <li>
+      <a href="https://photoswipe.com/" target="_blank">PhotoSwipe JavaScript Gallery</a>
+    </li>
+    <!--<li>
+      <a href="https://github.com/scdoshi/jquery-ajaxchimp" target="_blank">AjaxChimp</a>
+    </li>-->
+    <!--<li>
+      <a href="https://animejs.com/" target="_blank">Anime.js</a>
+    </li>-->
+    
+    <!--<li> <span>app.js</span> - Braxton template custom JavaScript file.</li>-->
+  </ul>
+
+  <p>All this uncompressed files you can find in the <span>source-files</span> folder.</p>
+
+  <!-- <p class="help-text">* - color skin number</p> -->
+
+</div>
+</div></div><div class="docs__item" id="fonts"><div class="docs__title"><p class="number">04</p><h2 class="title">Fonts</h2></div><div class="docs__content"><p>In the Braxton template we used <a href="https://fonts.google.com/specimen/Syne" target="_blank">Syne Font</a>, <a href="https://fontawesome.com/" target="_blank">Fontawesome Iconic Font</a> and  <a href="https://phosphoricons.com/" target="_blank">Phosphor Iconic Font.</a></p><!--include 04-01_fonts-customfonts.html--><!--include 04-02_fonts-liningnums.pug--><div class="content__item" id="googlefonts"><h3>Google Fonts</h3><p>Braxton uses </p><ul><li><a href="https://fonts.google.com/specimen/Syne" target="_blank">Syne</a> font for titles, controls, basic text content and additional text.</li></ul><p>The font is embedded in the  <code>main.css</code> file:</p><pre><code class="language-css">@import url("https://fonts.googleapis.com/css2?family=Syne:wght@400..800&display=swap");</code></pre><p>You can customize this font or embed another fonts for your project with <a href="https://fonts.google.com/" target="_blank">Google Fonts</a>. In this case, you'll also need to change the fonts in the css files per your fonts used.</p></div><div class="content__item" id="phosphor"><h3>Phosphor Icons</h3><p>Braxton uses <a href="https://phosphoricons.com/" target="_blank">Phosphor</a> iconic font. You can use <a href="https://phosphoricons.com/" target="_blank">phosphoricons.com</a> page to easily find the icon you want to use. All icons are already compiled in the <code>plugins.css</code> file and ready for use.</p><p>To insert icon in your project, just choose Web tab and copy the code: <code>&lt;i class=&quot;ph ph-heart&quot;&gt;&lt;/i&gt;</code>, <code>&lt;i class=&quot;ph ph-arrow-up&quot;&gt;&lt;/i&gt;</code>, <code>&lt;i class=&quot;ph ph-instagram-logo&quot;&gt;&lt;/i&gt;</code>.</p><pre><code class="language-html">&lt;li&gt;
+    &lt;a href=&quot;https://www.instagram.com/&quot; target=&quot;_blank&quot;&gt;
+        &lt;i class=&quot;ph ph-instagram-logo&quot;&gt;&lt;/i&gt;
+    &lt;/a&gt;
+&lt;/li&gt;</code></pre><p>More information about Phosphor icons you can find on official documentation website - <a href="https://github.com/phosphor-icons/homepage#readme" target="_blank">Phosphor Docs</a>.</p></div><div class="content__item" id="fontawesome"><h3>Fontawesome free</h3><p>Braxton uses free version of <a href="https://fontawesome.com/" target="_blank">FontAwesome 6.5.1</a> iconic font. You can use <a href="https://fontawesome.com/icons" target="_blank">fontawesome.com/icons</a> page to easily find the icon you want to use. Solid, regular and brands icons are already compiled in the <code>plugins.css</code> file and ready for use.</p><p>To change icons, just change the class names: <code>fa-solid fa-heart</code>, <code>fa-brands fa-instagram</code>, <code>fa-regular fa-address-book</code>.</p><pre><code class="language-html">&lt;li&gt;
+    &lt;a href=&quot;https://www.facebook.com/&quot; target=&quot;_blank&quot;&gt;
+        &lt;i class=&quot;fa-brands fa-facebook&quot;&gt;&lt;/i&gt;
+    &lt;/a&gt;
+&lt;/li&gt;</code></pre><p>More information about FontAwesome you can find on official documentation website - <a href="https://docs.fontawesome.com/" target="_blank">FontAwesome Docs</a>.</p></div></div></div><div class="docs__item" id="favicon">
+  <div class="docs__title">
+    <p class="number">05</p>
+    <h2 class="title">Favicon and Apple touch icons</h2>
+  </div>
+  <div class="docs__content">
+    <p>Braxton covers almost all platforms design requirements for favicon and icons:</p>
+    <p>
+      <span>Classic favicon:</span>
+    </p>
+    <pre>
+      <code class="language-html">
+        &lt;link rel=&quot;icon&quot; href=&quot;img/favicon/favicon.ico&quot; sizes=&quot;any&quot;&gt;
+      </code>
+    </pre>
+    <p>
+      <span>Android Web App Manifest & Apple Touch Icon:</span>
+    </p>
+    <pre>
+      <code class="language-html">
+        &lt;link rel=&quot;apple-touch-icon&quot; href=&quot;img/favicon/apple-touch-icon.png&quot;&gt;
+        &lt;link rel=&quot;manifest&quot; href=&quot;img/favicon/manifest.webmanifest&quot;&gt;
+      </code>
+    </pre>
+    <p>
+      <span>Universal SVG Icon for All Sizes ang Dark & Light Browser Color Themes:</span>
+    </p>
+    <pre>
+      <code class="language-svg">
+        &lt;link rel=&quot;icon&quot; href=&quot;img/favicon/icon.svg&quot; type=&quot;image/svg+xml&quot;&gt;
+      </code>
+    </pre>
+    <p>
+      <span>Facebook Metadata:</span>
+    </p>
+    <pre>
+      <code class="language-html">
+        &lt;!-- Facebook Metadata Start --&gt;
+        &lt;meta property=&quot;og:image:height&quot; content=&quot;1200&quot;&gt;
+        &lt;meta property=&quot;og:image:width&quot; content=&quot;1200&quot;&gt;
+        &lt;meta property=&quot;og:title&quot; content=&quot;Braxton - Personal Portfolio & Resume HTML Template&quot;&gt;
+        &lt;meta property=&quot;og:description&quot; content=&quot;Show yourself brightly with Braxton - unique and creative portfolio and resume template!&quot;&gt;
+        &lt;meta property=&quot;og:url&quot; content=&quot;http://mixdesign.club/themeforest/braxton/&quot;&gt;
+        &lt;meta property=&quot;og:image&quot; content=&quot;http://mixdesign.club/themeforest/braxton/img/og-image.jpg&quot;&gt;
+        &lt;!-- Facebook Metadata End --&gt;
+      </code>
+    </pre>
+    <p>You can use Braxton favicon as an example or generate new one with
+      <a href="https://realfavicongenerator.net/" target="_blank">Favicon Generator</a>
+      or any other favicon generator by your needs.</p>
+    <!-- <p class="help-text">* - color skin number</p> -->
+  </div>
+</div>
+<div class="docs__item" id="customization"><div class="docs__title"><p class="number">06</p><h2 class="title">Customization</h2></div><div class="docs__content"><p>Braxton template comes with easy-to-customize page elements. You can choose from 4 ready-to-use demo files,  2 color themes, various backgrounds and much more.</p><div class="content__item" id="preloader"><h3>Preloader</h3><p>Loader will hide contents of your site until it's fully loaded. If you want to customize or remove loader, find this code in <code>*.html</code> file:</p><pre><code class="language-html">&lt;!-- Loader Start --&gt;
+&lt;div id=&quot;loader&quot; class=&quot;loader&quot;&gt;
+  &lt;div id=&quot;loaderContent&quot; class=&quot;loader__content&quot;&gt;
+    &lt;div class=&quot;loader__shadow&quot;&gt;&lt;/div&gt;
+    &lt;div class=&quot;loader__box&quot;&gt;&lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;!-- Loader End --&gt;</code></pre><p>Loader styles are included in the <code>&lt;head&gt;</code> tag:</p><pre><code class="language-html">&lt;!-- Template Styles Start--&gt;
+&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;css/loaders/loader.css&quot;&gt;
+...
+&lt;!-- Template Styles End--&gt;</code></pre><!--p.help-text * - loader color name. You can choose between dark and light versions.--></div><div class="content__item" id="colors"><h3>Colors</h3><p>Braxton template provides 2 color themes and 4 ready-to-use demo pages. The template automatically detects the device's color theme and applies the same one - dark or light. 
+ You can change the color theme by clicking color theme switcher.</p><p>It's easy to change the dark and light color themes by changing default variables in the <code>main.css</code> file:</p><pre><code class="language-css">:root {
+  ...
+  /* light color scheme */
+  --base--light: #e6ebf4;
+  ...
+  /* dark color scheme */
+  --base--dark: #111111;
+  ...
+  /* permanent colors */
+  --per-base: #111111;
+  ...
+}</code></pre><ol><li>Dark Color Skin<img src="img/customization/color-1.webp" alt="Color Skin Image"></li><li>Light Color Skin<img src="img/customization/color-2.webp" alt="Color Skin Image"></li></ol><p><span>Feel free to experiment!</span></p></div><div class="content__item" id="logo"><h3>Logo</h3><p>The logo container is located in the avatar section of the template - <code>div class="avatar__logo"</code>.</p><img src="img/customization/03-docs-logo.jpg" alt="Logo Image"><p> <strong>Please note! </strong>If you want to change the logo color with the color theme switch button, 
+you need to use an SVG inline code image with <code>fill=&quot;currentColor&quot;</code> property or use CSS variables in the <code>linearGradient</code> :</p><pre><code class="language-html">  &lt;svg xmlns=&quot;http://www.w3.org/2000/svg&quot; width=&quot;85px&quot; height=&quot;85px&quot; viewBox=&quot;0 0 85 85&quot; fill=&quot;currentColor&quot;&gt;
+    &lt;path id=&quot;caption&quot; fill=&quot;currentColor&quot; d=&quot;...&quot;/&gt;
+    &lt;path id=&quot;logo&quot; fill=&quot;currentColor&quot; d=&quot;...&quot;/&gt;
+  &lt;/svg&gt;</code></pre><pre><code class="language-html">&lt;linearGradient id=&quot;gradientFill&quot; gradientUnits=&quot;userSpaceOnUse&quot; x1=&quot;9.9604&quot; y1=&quot;75.0338&quot; x2=&quot;75.0387&quot; y2=&quot;9.9555&quot;&gt;
+  &lt;stop  offset=&quot;0&quot; style=&quot;stop-color:var(--accent)&quot;/&gt;
+  &lt;stop  offset=&quot;1&quot; style=&quot;stop-color:var(--secondary)&quot;/&gt;
+&lt;/linearGradient&gt;</code></pre><p>Of course, you can use an ordinary <code>&lt;img&gt;</code> tag, but in this case the logo won't change it's color with the theme.</p></div><div class="content__item" id="images"><h3>Images</h3><p>All images used in the Braxton template live demo are just for preview purpose only and they are not included in main download files. You easily can find all images on <a href="https://www.freepik.com/" target="_blank">freepik.com</a> or <a href="https://www.pexels.com/" target="_blank">pexels.com</a>. We are using  placeholders from <a href="https://dummyimage.com/" target="_blank">dummyimage.com</a> instead of real images. You can easily replace placeholder URL with a path to your image like <code>img/yourimage.jpg</code>.</p><p>All tmplate background images you can replace in the <span>main.css</span> file:</p><pre><code class="language-css">/* ------------------------------------------------*/
+/* Template Backgrounds Start */
+/* ------------------------------------------------*/
+.image-background {
+  background-image: url("https://dummyimage.com/2560x1440/4d4d4d/636363");
+}
+...
+/* ------------------------------------------------*/
+/* Template Backgrounds End */
+/* ------------------------------------------------*/</code></pre></div><div class="content__item" id="header"><h3>Header and Navigation</h3><p>Braxton template comes with 1 header type with left aligned menu links and right aligned controls.</p><p><span>Desktop view:</span></p><img src="img/customization/06-docs-header.jpg" alt="Header Image"><p><span>Mobile view:</span></p><img src="img/customization/06-docs-header-m.jpg" alt="Header Image"><p>Header contains navigation list, color switch button and contact CTA. You can find the header in the  beginning of the <code>*.html</code> file:</p><pre><code class="language-html">&lt;!-- Header Start --&gt;
+&lt;header id=&quot;header&quot; class=&quot;header d-flex justify-content-between&quot;&gt;
+ 
+  &lt;!-- Navigation Menu Start --&gt;
+  &lt;div class=&quot;header__navigation&quot;&gt;
+    &lt;nav id=&quot;menu&quot; class=&quot;menu&quot;&gt;
+      &lt;ul class=&quot;menu__list d-flex justify-content-start&quot;&gt;
+        &lt;li class=&quot;menu__item&quot;&gt;
+          &lt;a class=&quot;menu__link btn&quot; href=&quot;#home&quot;&gt;
+            &lt;span class=&quot;menu__caption&quot;&gt;Home&lt;/span&gt;
+            &lt;i class=&quot;ph-bold ph-house-simple&quot;&gt;&lt;/i&gt;
+          &lt;/a&gt;
+        &lt;/li&gt;
+        ...
+      &lt;/ul&gt;
+    &lt;/nav&gt;
+  &lt;/div&gt;
+  &lt;!-- Navigation Menu End --&gt;
+ 
+  &lt;!-- Header Controls Start --&gt;
+  &lt;div class=&quot;header__controls d-flex justify-content-end&quot;&gt;
+    ...
+  &lt;/div&gt;
+  &lt;!-- Header Controls End --&gt;
+ 
+&lt;/header&gt;
+&lt;!-- Header End --&gt;</code></pre></div><!--include 06-06_customization-menu.html--><div class="content__item" id="headline"><h3>Headline</h3><p>Braxton template comes with functional layout with various animated backgrounds. Backgrouds settings you can find in the <!--a(href="#plugins") Plugins--><!--|  and --><a href="#backgrounds">Animated Backgrounds</a> sections of this file.</p><img src="img/customization/01-headline.webp" alt="Layout Image"><p>Replace this headline demo text with your own:</p><pre><code class="language-html">&lt;!-- Headline Start --&gt;
+   &lt;div id=&quot;headline&quot; class=&quot;headline d-flex align-items-start flex-column&quot; data-speed=&quot;1&quot;&gt;
+     &lt;p class=&quot;headline__subtitle animate-headline&quot;&gt;
+       &lt;svg xmlns=&quot;http://www.w3.org/2000/svg&quot; x=&quot;0px&quot; y=&quot;0px&quot; width=&quot;13px&quot; height=&quot;13px&quot; viewBox=&quot;0 0 13 13&quot; fill=&quot;currentColor&quot;&gt;
+         &lt;path fill=&quot;currentColor&quot; d=&quot;M5.6,12.6c-0.5-0.8-0.7-2.4-1.7-3.5c-1-1-2.7-1.2-3.5-1.7C-0.1,7-0.1,6,0.4,5.6c0.8-0.5,2.3-0.6,3.5-1.8
+           C5,2.8,5.1,1.2,5.6,0.4C6-0.1,7-0.1,7.4,0.4c0.5,0.8,0.7,2.4,1.8,3.5c1.2,1.2,2.6,1.2,3.5,1.7c0.6,0.4,0.6,1.4,0,1.7
+           C11.8,7.9,10.2,8,9.1,9.1c-1,1-1.2,2.7-1.7,3.5C7,13.1,6,13.1,5.6,12.6z&quot;/&gt;
+       &lt;/svg&gt;
+       &lt;span&gt;Let's meet!&lt;/span&gt;
+     &lt;/p&gt;
+     &lt;h1 class=&quot;headline__title animate-headline&quot;&gt;I'm Alex Walker&lt;br&gt;Digital designer and illustrator.&lt;/h1&gt;
+     &lt;div class=&quot;headline__btnholder d-flex flex-column flex-sm-row&quot;&gt;
+       &lt;a class=&quot;btn mobile-vertical btn-default btn-hover btn-hover-accent-mobile animate-headline&quot; href=&quot;#portfolio&quot;&gt;
+         &lt;span class=&quot;btn-caption&quot;&gt;My Works&lt;/span&gt;
+         &lt;i class=&quot;ph-bold ph-squares-four&quot;&gt;&lt;/i&gt;
+       &lt;/a&gt;
+       &lt;a class=&quot;btn mobile-vertical btn-default btn-hover btn-hover-outline-mobile animate-headline&quot; href=&quot;#0&quot;&gt;
+         &lt;span class=&quot;btn-caption&quot;&gt;Download CV&lt;/span&gt;
+         &lt;i class=&quot;ph-bold ph-download-simple&quot;&gt;&lt;/i&gt;
+       &lt;/a&gt;
+     &lt;/div&gt;
+   &lt;/div&gt;
+&lt;!-- Headline End --&gt;</code></pre></div></div></div><div class="docs__item" id="plugins"><div class="docs__title"><p class="number">07</p><h2 class="title">Plugins</h2></div><div class="docs__content"><!--include 07-01_plugins-countdown.html--><!--include 07-01_plugins-typedjs.pug--><div id="swiper" class="content__item">
+
+  <h3>Swiper Slider</h3>
+  <p>Braxton uses <a href="https://swiperjs.com/" target="_blank">Swiper Slider Plugin</a> for the testimonials slider.
+     It's a simple slider with navigation buttons and slide effect:</p>
+  <img src="img/plugins/swiper.jpg" alt="Swiper Slider Image">
+
+  <pre>
+    <code class="language-html">
+      &lt;!-- Testimonials Slider Start --&gt;
+      &lt;div class=&quot;testimonials-slider&quot;&gt;
+        &lt;!-- slider main container --&gt;
+        &lt;div class=&quot;swiper-testimonials&quot;&gt;
+          &lt;!-- additional required wrapper --&gt;
+          &lt;div class=&quot;swiper-wrapper&quot;&gt;
+            &lt;!-- slides --&gt;
+            &lt;div class=&quot;swiper-slide&quot;&gt;
+              ...
+            &lt;/div&gt;
+            &lt;div class=&quot;swiper-slide&quot;&gt;
+              ...
+            &lt;/div&gt;
+          &lt;/div&gt;
+          &lt;!-- navigation buttons --&gt;
+          &lt;div class=&quot;swiper-button-prev mxd-slider-btn-square mxd-slider-btn-square-prev animate-in-up&quot;&gt;
+            ...
+          &lt;/div&gt;
+          &lt;div class=&quot;swiper-button-next mxd-slider-btn-square mxd-slider-btn-square-next animate-in-up&quot;&gt;
+            ...
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;!-- Testimonials Slider End --&gt;
+    </code>
+  </pre>
+
+  <p>Find the <code>Load Scripts</code> section at the end of <code>&lt;body&gt;</code> and make sure that all the necessary js files are added in the following order:</p>
+  <ul>
+    <li>libs.min.js</li>
+    <li>app.js</li>
+  </ul>
+  <pre>
+    <code class="language-html">
+      &lt;!-- Load Scripts Start --&gt;
+      &lt;script src=&quot;js/libs.min.js&quot;&gt;&lt;/script&gt;
+      ...
+      &lt;script src=&quot;js/app.js&quot;&gt;&lt;/script&gt;
+      &lt;!-- Load Scripts End --&gt;
+    </code>
+  </pre>
+  <p>
+    If you want to change this slider settings, find the
+    <code>app.js</code>
+    file in
+    <code>js</code>
+    folder and make the necessary changes to the swiper init lines:
+  </p>
+
+  <pre>
+    <code class="language-js">
+      const swiper = new Swiper('.swiper-testimonials', {
+        slidesPerView: 1,
+        spaceBetween: 20,
+        autoplay: true,
+        speed: 1000,
+        loop: true,
+        loopFillGroupWithBlank: true,
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+        },
+      });
+    </code>
+  </pre>
+
+  <p>
+    More information about Swiper settings you can find in the official documentation -
+    <a href="https://swiperjs.com/get-started" target="_blank">swiperjs.com/get-started</a>
+  </p>
+
+</div>
+<!--include 07-04_plugins-skillbars.pug--><!--include 07-05_plugins-magnific.pug--><div class="content__item" id="gallery"><h3>Photoswipe Gallery</h3><p>Portfolio gallery is made using <a href="https://photoswipe.com/" target="_blank">PhotoSwipe JavaScript Gallery</a>.</p><img src="img/plugins/15-docs-gallery-1.jpg" alt="Gallery Image"><p>This is an example for one portfolio item, just duplicate it to add new pictures or fill it with your content:</p><pre><code class="language-html">&lt;figure class=&quot;col-12 col-md-6 gallery__item grid-item animate-card-2&quot; itemprop=&quot;associatedMedia&quot; itemscope itemtype=&quot;http://schema.org/ImageObject&quot;&gt;
+  &lt;a href=&quot;https://dummyimage.com/1400x1400/3c3c3c/636363&quot; data-image=&quot;https://dummyimage.com/800x800/3c3c3c/636363&quot; class=&quot;gallery__link&quot; itemprop=&quot;contentUrl&quot; data-size=&quot;1400x1400&quot;&gt;
+    &lt;img src=&quot;https://dummyimage.com/800x800/3c3c3c/636363&quot; class=&quot;gallery__image&quot; itemprop=&quot;thumbnail&quot; alt=&quot;Image description&quot;&gt;
+  &lt;/a&gt;
+  &lt;figcaption class=&quot;gallery__descr&quot; itemprop=&quot;caption description&quot;&gt;
+    &lt;h5&gt;Isometric House&lt;/h5&gt;
+    &lt;div class=&quot;card__tags d-flex flex-wrap&quot;&gt;
+      &lt;span class=&quot;rounded-tag opposite&quot;&gt;Illustrations&lt;/span&gt;
+      &lt;span class=&quot;rounded-tag opposite&quot;&gt;3D Render&lt;/span&gt;
+    &lt;/div&gt;
+    &lt;p class=&quot;small&quot;&gt;Mauris porttitor lobortis ligula, quis molestie lorem scelerisque eu. Morbi aliquam enim odio.
+    &lt;/p&gt;
+  &lt;/figcaption&gt;
+&lt;/figure&gt;</code></pre><img src="img/plugins/16-docs-gallery-2.jpg" alt="Gallery Image"><p>JavaScript files that have to be included:</p><ul><li>libs.min.js</li><li>gallery-init.js</li></ul><pre><code class="language-html">&lt;!-- Load Scripts Start--&gt;
+&lt;script src=&quot;js/libs.min.js&quot;&gt;&lt;/script&gt;
+&lt;script src=&quot;js/gallery-init.js&quot;&gt;&lt;/script&gt;
+...
+&lt;!-- Load Scripts End--&gt;</code></pre><p>More information about PhotoSwipe Gallery you can find in <span><a href="https://photoswipe.com/documentation/getting-started.html" target="_blank">PhotoSwipe Documentation</a></span>.</p></div></div></div><div class="docs__item" id="backgrounds"><div class="docs__title"><p class="number">08</p><h2 class="title">Animated Backgrounds</h2></div><div class="docs__content"><p>All backgrounds CSS styles are compiled in <code>plugins.css</code> file so you don't need to add any CSS files.</p><div class="content__item" id="svgObjects"><h3>SVG Objects</h3><img src="img/backgrounds/1.webp" alt="Animated Background Image"><p>This background effect is created using 2 inline SVG objects: </p><ul><li><code>background__svg01</code></li><li><code>background__svg02</code></li></ul><pre><code class="language-html">&lt;div id=&quot;svgBackground&quot; class=&quot;svg-background&quot;&gt;
+  &lt;!-- top svg item --&gt;
+  &lt;div class=&quot;background__svg01&quot; data-speed=&quot;0.8&quot;&gt;
+    ...
+  &lt;/div&gt;
+  &lt;!-- bottom svg item --&gt;
+  &lt;div class=&quot;background__svg02&quot; data-speed=&quot;0.4&quot;&gt;
+    ...
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre><p>The loading animation for this objects is provided by simple CSS animation on loading: </p><pre><code class="language-html">&lt;script&gt;
+  const content = document.querySelector('body');
+  const imgLoad = imagesLoaded(content);
+  imgLoad.on('done', instance =&gt; {
+    setTimeout(() =&gt; {
+      document.getElementById(&quot;svgBackground&quot;).classList.add(&quot;loaded&quot;);
+    }, &quot;1000&quot;);
+  });
+&lt;/script&gt;</code></pre><p>Parallax scroll animation is provided by GSAP and scrollTrigger. If you want to change the scroll speed for  any object, just add  <code>data-speed</code> property:</p><pre><code class="language-html">&lt;div class=&quot;background__svg01&quot; data-speed=&quot;0.8&quot;&gt;
+  ...
+&lt;/div&gt;</code></pre><pre><code class="language-js">gsap.to("[data-speed]", {
+  y: (i, el) => (1 - parseFloat(el.getAttribute("data-speed"))) * ScrollTrigger.maxScroll(window) ,
+  ease: "none",
+  scrollTrigger: {
+    start: 0,
+    end: "max",
+    invalidateOnRefresh: true,
+    scrub: 0
+  }
+});</code></pre><p>Also you can change the objects color fill directly in the HTML file: </p><pre><code class="language-html">&lt;radialGradient id=&quot;color-gradient&quot; cx=&quot;418.5665&quot; cy=&quot;225.9685&quot; r=&quot;499.9326&quot; fx=&quot;866.8251&quot; fy=&quot;4.6162&quot; gradientTransform=&quot;matrix(-0.6935 0.7207 -0.7207 -0.6935 953.1126 355.0528)&quot; gradientUnits=&quot;userSpaceOnUse&quot;&gt;
+  &lt;stop  offset=&quot;0&quot; style=&quot;stop-color:#CEC4EF&quot;/&gt;
+  &lt;stop  offset=&quot;1&quot; style=&quot;stop-color:#CEC4EF;stop-opacity:0&quot;/&gt;
+&lt;/radialGradient&gt;</code></pre><p><span>Or replace it with any other object you like - the containers are animated separately from inline SVGs!</span></p></div><div class="content__item" id="parallaxImage"><h3>Parallax Image</h3><img src="img/backgrounds/2.webp" alt="Animated Background Image"><p>This background effect is created using a <code>*.webp</code> image with transparent background:</p><pre><code class="language-html">&lt;!-- Image Background Layer Start --&gt;
+  &lt;div id=&quot;imageBackground&quot; class=&quot;image-background&quot; data-speed=&quot;0.4&quot;&gt;&lt;/div&gt;
+&lt;!-- Image Background Layer End --&gt;</code></pre><p>Replace the placeholder with your image in the <code>main.css</code> file. You can use <code>*.webp</code> or <code>*.png</code> images.</p><pre><code class="language-css">.image-background {
+  background-image: url("../img/yourimage.webp");
+}</code></pre><p>Parallax scroll animation is provided by GSAP and scrollTrigger. If you want to change the scroll speed for  any object, just add  <code>data-speed</code> property:</p><pre><code class="language-html">&lt;div id=&quot;imageBackground&quot; class=&quot;image-background&quot; data-speed=&quot;0.4&quot;&gt;&lt;/div&gt;</code></pre><pre><code class="language-js">gsap.to("[data-speed]", {
+  y: (i, el) => (1 - parseFloat(el.getAttribute("data-speed"))) * ScrollTrigger.maxScroll(window) ,
+  ease: "none",
+  scrollTrigger: {
+    start: 0,
+    end: "max",
+    invalidateOnRefresh: true,
+    scrub: 0
+  }
+});</code></pre></div><div class="content__item" id="animatedGradients"><h3>Animated Gradients</h3><img src="img/backgrounds/3.webp" alt="Animated Background Image"><p>This background effect is created using 3 blured objects, animated with GSAP: </p><pre><code class="language-html">&lt;!-- Gradient Background Start --&gt;
+&lt;div class=&quot;gradient-background&quot;&gt;
+  &lt;div class=&quot;blur&quot;&gt;&lt;/div&gt;
+  &lt;div class=&quot;blur&quot;&gt;&lt;/div&gt;
+  &lt;div class=&quot;blur&quot;&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;!-- Gradient Background End --&gt;</code></pre><p>You can adjust the speed and angle by changing this variables in the <code>html</code>  file:</p><pre><code class="language-html">&lt;!-- Load Scripts Start --&gt;
+...
+&lt;script&gt;
+  ...
+  const randomDelay = random(0, 50);
+  const randomTime = random(20, 40);
+  const randomTime2 = random(5, 12);
+  const randomAngle = random(-30, 150);
+  ...
+&lt;/script&gt;
+...
+&lt;!-- Load Scripts End --&gt;</code></pre><p>Also you can change the gradients colors in the <code>main.css</code> file:</p><pre><code class="language-css">:root {
+  ...
+  /* light color scheme */
+  ...
+  --gradient-one--light: #CEC4EF;
+  --gradient-two--light: #f5c5cd;
+  --gradient-three--light: #ac8fe3;
+  /* dark color scheme */
+  ...
+  --gradient-one--dark: #a287d5;
+  --gradient-two--dark: #E4B8BF;
+  --gradient-three--dark: #8b6bc5;
+  ...
+}</code></pre></div><!--include 08-02_backgrounds-snow.pug--><!--include 08-02_backgrounds-nightsky.pug--><!--include 08-03_backgrounds-triangles.pug--><!--include 08-03_backgrounds-kenburns.pug--><!--include 08-04_backgrounds-video-local.pug--></div></div><div class="docs__item" id="forms"><div class="docs__title"><p class="number">09</p><h2 class="title">Forms</h2></div><div class="docs__content"><p>Braxton template is provided with 1 working form type:</p><ul><!--lia(href="#subscription-form") Mailchimp Subscription Form--><li><a href="#contact-forms">AJAX Contact Form.</a></li></ul><!--include 09-01_forms-subscription.pug--><div class="content__item" id="contact-forms"><h3>Contact Form</h3><p>Braxton template has integrated ajax contact form.</p><img src="img/forms/17-docs-form-1.jpg" alt="Braxton Contact Form Image"><p>It's very easy to set up this forms to receive feedback on your e-mail:</p><ol><li>First of all you need to make sure that <code>mail.php</code> file is added to the root directory of your project.</li><li>Then find <code>&lt;form&gt;</code> tag with <code>id="contact-form"</code> in the <code>*.html</code> file. </li><li>This form contains 3 hidden required inputs. Replace data in the value parameter of these hidden fields:<pre><code class="language-html">&lt;!-- Contact Form Start --&gt;
+&lt;form class=&quot;form contact-form&quot; id=&quot;contact-form&quot;&gt;
+  &lt;!-- Hidden Required Fields --&gt;
+  &lt;input type=&quot;hidden&quot; name=&quot;project_name&quot; value=&quot;Braxton Template&quot;&gt;
+  &lt;input type=&quot;hidden&quot; name=&quot;admin_email&quot; value=&quot;support@mixdesign.club&quot;&gt;
+  &lt;input type=&quot;hidden&quot; name=&quot;form_subject&quot; value=&quot;Contact Form Message&quot;&gt;
+  &lt;!-- END Hidden Required Fields--&gt;
+  ...
+&lt;/form&gt;
+&lt;!-- Contact Form End --&gt;</code></pre></li><li>Check JavaScript files connection.</li></ol><p>JavaScript files that have to be included:</p><ul><li><span>libs.min.js</span></li><li><span>app.js</span></li></ul><pre><code class="language-html">&lt;!-- Load Scripts Start--&gt;
+&lt;script src=&quot;js/libs.min.js&quot;&gt;&lt;/script&gt;
+...
+&lt;script src=&quot;js/app.js&quot;&gt;&lt;/script&gt;
+&lt;!-- Load Scripts End--&gt;</code></pre><p><span>Done! Now you can receive messages on your e-mail.</span></p></div></div></div><!--include chapters/10_maps.pug--><div class="docs__item" id="gulp-project"><div class="docs__title"><p class="number">10</p><h2 class="title">BraxtonGULP</h2></div><div class="docs__content"><p>If you want to totally customize Braxton, you can use our all-inclusive <span>BraxtonGULP template.</span> BraxtonGULP includes Bootstrap 5 Grid, Gulp, Sass, Bourbon, Autoprefixer, Browsersync, Clean-CSS, CSS Beautify, Uglify, 
+ and other packages for efficient and comfortable work.</p><p>BraxtonGULP requires <span><a href="https://nodejs.org">node</a></span>, <span><a href="https://www.npmjs.com/">npm</a></span> and <span><a href="https://git-scm.com/">git</a></span>.</p><h3>Getting started</h3><p>Install Node Modules: <code>npm i</code><br>Run BraxtonGULP: <code>gulp</code></p><h3>Project structure</h3><ul><li>The source code is located in the <code>app</code> directory;</li><li>SASS files are located in the <code>sass</code> directory;</li><li>The <code>dist</code> folder is a production folder. It contains ready project with optimized HTML, CSS, JS and images.</li></ul><h3>Gulp tasks</h3><p><span>gulp:</span> run default gulp task for web development;<br><span>build:</span> build project to dist folder;<br><span>clearcache:</span> clear all gulp cache.</p><p>If you have any questions about BraxtonGULP, you can email us on <span><a href="mailto:support@mixdesign.club">support@mixdesign.club</a></span>.</p></div></div><div class="docs__item" id="changelog"><div class="docs__title"><p class="number">11</p><h2 class="title">Changelog</h2></div><div class="docs__content"><h3>Version 1.0.0 <span>12.03.2024</span></h3><ul><li>Initial release</li></ul></div></div><div class="docs__item" id="credits"><div class="docs__title"><p class="number">12</p><h2 class="title">Credits</h2></div><div class="docs__content"><h3>CSS and JavaScript files</h3><ul><li>jQuery - <a href="http://jquery.com/" target="_blank">jquery.com</a></li><!--li jQuery Transit - a(href="https://github.com/rstacruz/jquery.transit" target="_blank") github.com/rstacruz/jquery.transit--><!--li jQuery Mousewheel - a(href="https://github.com/jquery/jquery-mousewheel" target="_blank") github.com/jquery/jquery-mousewheel--><li>Modernizr - <a href="https://modernizr.com/" target="_blank">modernizr.com</a></li><li>GSAP - <a href="https://gsap.com/" target="_blank">gsap.com</a></li><li>GSAP ScrollTrigger - <a href="https://gsap.com/docs/v3/Plugins/ScrollTrigger/" target="_blank">gsap.com/docs/v3/Plugins/ScrollTrigger</a></li><li>Lenis Smooth Scroll - <a href="https://lenis.studiofreight.com/" target="_blank">lenis.studiofreight.com</a></li><li>Bootstrap 5 grid - <a href="https://getbootstrap.com/" target="_blank">getbootstrap.com</a></li><li>imagesLoaded - <a href="https://github.com/desandro/imagesloaded" target="_blank">github.com/desandro/imagesloaded</a></li><!--li KBW Countdown - a(href="http://keith-wood.name/countdown.html" target="_blank") keith-wood.name/countdown.html--><!--li Typed.js - a(href="https://mattboldt.com/demos/typed-js/" target="_blank") mattboldt.com/demos/typed-js--><!--li Textillate.js - a(href="https://textillate.js.org/" target="_blank") textillate.js.org--><!--li Lettering.js - a(href="https://letteringjs.com/" target="_blank") letteringjs.com--><!--li Magnific Popup - a(href="https://dimsemenov.com/plugins/magnific-popup/" target="_blank") dimsemenov.com/plugins/magnific-popup--><!--li Malihu Custom Scrollbar - a(href="https://manos.malihu.gr/jquery-custom-content-scroller/" target="_blank") manos.malihu.gr/jquery-custom-content-scroller--><li>Swiper Slider - <a href="https://swiperjs.com/" target="_blank">swiperjs.com</a></li><!--li Vegas - a(href="https://vegas.jaysalvat.com/" target="_blank") vegas.jaysalvat.com--><!--li YTPlayer - a(href="https://github.com/pupunzi/jquery.mb.YTPlayer" target="_blank") github.com/pupunzi/jquery.mb.YTPlayer--><!--li Particles JS - a(href="https://vincentgarreau.com/particles.js/" target="_blank") vincentgarreau.com/particles.js--><li>PhotoSwipe JavaScript Gallery - <a href="http://photoswipe.com/" target="_blank">photoswipe.com</a></li><!--li jQuery CSS Skills Bar - a(href="https://github.com/umarwebdeveloper/jquery-css-skills-bar" target="_blank") github.com/umarwebdeveloper/jquery-css-skills-bar--><!--li Google Maps - a(href="https://developers.google.com/maps/web/" target="_blank") developers.google.com/maps/web--><!--li AjaxChimp - a(href="https://github.com/scdoshi/jquery-ajaxchimp" target="_blank") github.com/scdoshi/jquery-ajaxchimp--><li>UniMail - <a href="https://github.com/agragregra/uniMail" target="_blank">github.com/agragregra/uniMail</a></li></ul><h3>Icons and images</h3><ul><li>Icons - <a href="https://phosphoricons.com/" target="_blank">Phosphoricons.com</a> and <a href="https://fontawesome.com/" target="_blank">Fontawesome.com</a></li><li>Images - <a href="https://www.freepik.com/" target="_blank">Freepik.com</a> and <a href="https://www.pexels.com/" target="_blank">Pexels.com</a></li><li>Mockups - <a href="https://www.designdeck.io/" target="_blank">Designdeck.io</a></li></ul></div></div></div></div></div></section><!-- footer--><footer class="demo__footer">
+  <p>made with
+    <i class="fas fa-heart"></i>
+     by
+    <a href="https://1.envato.market/EKA9WD" target="_blank">mix_design</a>
+  </p>
+</footer>
+<!-- to top button--><a href="#0" class="to-top-button">
+  <i class="fas fa-arrow-up"></i>
+</a>
+<!-- load scripts--><script src="js/libs.min.js"></script>
+<script src="js/docs.js"></script>
+</body></html>

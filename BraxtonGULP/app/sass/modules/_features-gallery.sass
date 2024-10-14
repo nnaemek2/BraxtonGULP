@@ -1,0 +1,165 @@
+.inner__gallery
+
+.my-gallery
+
+.gallery__item
+  position: relative
+
+.gallery__link
+  display: block
+  position: relative
+  overflow: hidden
+  border-radius: var(--_radius-xl)
+  cursor: pointer
+  .picture
+    position: absolute
+    +center
+    width: 112%
+    height: 112%
+    background-repeat: no-repeat
+    background-position: center center
+    background-size: cover
+    transition: background-position .5s
+    transition: transform .7s ease-in-out, opacity .5s ease-in-out, width 0.3s var(--_animbezier), height 0.3s var(--_animbezier)
+  +MQ(XL)
+    transform: scale3d(1,1,1)
+    transition: transform .3s var(--_animbezier)
+    .no-touch &:hover
+      transform: scale3d(1.03,1.03,1.03)
+      .picture
+        width: 100%
+        height: 100%
+
+.gallery__image
+  opacity: 0
+
+.gallery__descr
+  +position(absolute, null null 0 1.5rem)
+  width: calc(100% - 3rem)
+  padding: 2.5rem 3rem
+  h5,
+  p
+    display: none
+  .rounded-tag
+    display: inline-flex
+    align-items: center
+    height: 3.4rem
+    padding: 0 1.4rem
+    margin: 0.5rem 1rem 0.5rem 0
+    border-radius: var(--_radius-s)
+    font: normal 400 1.5rem/1 var(--_font-default)
+    font-variant-numeric: lining-nums
+    background-color: var(--base)
+    color: var(--t-bright)
+    &.opposite
+      background-color: var(--base-opp)
+      color: var(--t-opp-bright)
+  +MQ(XXL)
+    +position(absolute, null null 0 2.5rem)
+    width: calc(100% - 5rem)  
+
+.card__tags
+
+.pswp__bg
+  background: var(--per-base-tint)
+
+.pswp__top-bar,
+.pswp__ui--fit .pswp__top-bar
+  height: 74px
+  padding: 1.5rem
+  background-color: transparent
+
+.pswp__counter
+  left: 1.5rem
+  top: 1.5rem
+  padding: 0 1.4rem
+  border-radius: 2rem
+  background-color: rgba(0,0,0,.4)
+  font: normal 400 1.8rem/44px var(--_font-default)
+  font-variant-numeric: lining-nums
+  color: var(--t-per-bright-light)
+  opacity: 1
+  &:active
+    opacity: 1
+
+.pswp__caption,
+.pswp__ui--fit .pswp__caption
+  padding: 1.5rem
+  background-color: transparent
+
+.pswp__caption__center
+  border-radius: var(--_radius-xl)
+  padding: 3rem
+  background-color: rgba(0,0,0,.4)
+  h5
+    font: normal 700 calc( var(--_size) * 1.5 )/1.2 var(--_font-accent)
+    color: var(--t-per-bright-light)
+    margin-bottom: 1.2rem
+  .rounded-tag
+    display: inline-flex
+    align-items: center
+    height: 3.4rem
+    padding: 0 1.4rem
+    margin: 0.5rem 1rem 0.5rem 0
+    border-radius: var(--_radius-s)
+    font: normal 400 1.5rem/1 var(--_font-default)
+    font-variant-numeric: lining-nums
+    background-color: transparent
+    border: 1px solid var(--per-stroke-controls)
+    color: var(--t-per-bright-light)
+  p
+    font: normal 400 calc(var(--_size) * 1.125)/1.4 var(--_font-default)
+    color: var(--t-per-medium-light)
+    margin-top: 1rem
+  +MQ(XL)
+    max-width: 600px
+  +MQ(XXXL)
+    p
+      font-size: calc(var(--_size) * 1.25)
+
+.pswp__button
+  background-color: rgba(0,0,0,.4)
+  border: 1px solid var(--per-stroke-controls)
+  border-radius: 2rem
+  opacity: 1
+  &:active
+    opacity: 1
+
+.pswp__button--zoom,
+.pswp__button--fs,
+.pswp__button--share
+  margin-right: 1rem
+
+.pswp__button--close
+  position: relative
+  background-color: var(--accent)
+  border: none
+  opacity: 1
+  &:active
+    opacity: 1
+
+.pswp__button--arrow--left,
+.pswp__button--arrow--right
+  width: 74px
+  opacity: 1
+  border: none
+  background-color: transparent
+
+.pswp__button--arrow--left::before,
+.pswp__button--arrow--right::before
+  top: 28px
+  width: 44px
+  height: 44px
+  line-height: 44px
+  border-radius: 2rem
+  background-color: var(--accent)
+  color: var(--t-per-bright-dark)
+  font-size: 1.6rem
+
+.pswp__button--arrow--left:before
+  left: 1.5rem
+  background-position: -132px -44px
+
+.pswp__button--arrow--right:before
+  right: 1.5rem
+  background-position: -88px -44px

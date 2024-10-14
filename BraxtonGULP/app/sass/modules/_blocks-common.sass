@@ -1,0 +1,107 @@
+.content
+  position: relative
+  width: 100%
+  min-width: 360px
+  height: auto
+  +MQ(L)
+    padding-left: 330px
+  +MQ(XL)
+    padding-left: 360px
+  +MQ(XXL)
+    padding-left: 480px
+  +MQ(XXXL)
+    padding-left: 500px
+
+.content__background
+  +position(absolute, 0 null null 0)
+  width: 100%
+  height: 100%
+
+.content__wrapper
+  position: relative
+
+.content__block
+  position: relative
+  padding: 0 1.5rem
+  &.grid-block
+    padding: 0
+  +MQ(M)
+    padding: 0 6rem
+    &.grid-block
+      padding: 0 4.5rem
+  +MQ(L)
+    padding: 0 3rem
+    &.grid-block
+      padding: 0 1.5rem
+  +MQ(XL)
+    padding: 0 6rem 0 3rem
+    &.grid-block
+      padding: 0 4.5rem 0 1.5rem
+  +MQ(XXL)
+    padding: 0 8rem 0 5rem
+    &.grid-block
+      padding: 0 5.5rem 0 2.5rem
+  +MQ(XXXL)
+    padding: 0 10rem 0 5rem
+    &.grid-block
+      padding: 0 7.5rem 0 2.5rem
+
+.content__block
+  &.section-title
+    margin-bottom: 4rem
+  &.section-grid-title
+    margin-bottom: 1.4rem
+  &.block-large
+    margin-bottom: 11rem
+  &.block-grid-large
+    margin-bottom: 10rem
+  +MQ(M)
+    &.section-title
+      margin-bottom: 5rem
+    &.section-grid-title
+      margin-bottom: 1.9rem
+    &.block-large
+      margin-bottom: 13rem
+    &.block-grid-large
+      margin-bottom: 13rem
+  +MQ(XL)
+    &.section-title
+      margin-bottom: 4.7rem
+    &.section-grid-title
+      margin-bottom: 1.6rem
+  +MQ(XXL)
+    &.section-grid-title
+      margin-bottom: 0.4rem
+    &.block-large
+      margin-bottom: 14.6rem
+    &.block-grid-large
+      margin-bottom: 15rem
+  +MQ(XXXL)
+    &.section-title
+      margin-bottom: 5.3rem
+    &.block-large
+      margin-bottom: 15.6rem
+
+.section-h3
+  margin-bottom: 4.1rem
+  &.section-h3-grid
+    margin-bottom: 2.1rem
+  +MQ(XXL)
+    margin-bottom: 3.9rem
+    &.section-h3-grid
+      margin-bottom: 2rem
+  +MQ(XXXL)
+    margin-bottom: 3.7rem
+    &.section-h3-grid
+      margin-bottom: 1.8rem
+
+.grid-item
+  padding: 0 1.5rem
+  margin-top: 3rem
+  +MQ(XXL)
+    padding: 0 2.5rem
+    margin-top: 5rem
+
+.grid-item-s
+  padding: 0 1rem
+  margin-top: 2rem

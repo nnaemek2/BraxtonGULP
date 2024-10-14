@@ -1,0 +1,43 @@
+.resume-lines
+
+.resume-lines__item
+  padding: 4.8rem 0 4.3rem 0
+  border-bottom: 1px solid var(--stroke-elements)
+  &:first-of-type
+    border-top: 1px solid var(--stroke-elements)
+  +MQ(M)
+    padding: 4.4rem 0 4.3rem 0
+  +MQ(XXL)
+    padding: 4.4rem 0 4.3rem 0
+  +MQ(XXXL)
+    padding: 4.4rem 0 4rem 0
+
+.resume-lines__date
+  display: block
+  font: normal 400 1.5rem/1 var(--_font-default)
+  font-variant-numeric: lining-nums
+  color: var(--t-medium)
+  margin-bottom: 1.8rem
+  +MQ(M)
+    margin-bottom: 0
+    margin-top: 0.4rem
+
+.resume-lines__title,
+.resume-lines__source
+  padding-right: 3rem
+  +MQ(XXL)
+    padding-right: 5rem
+
+.resume-lines__source
+  font: normal 400 1.5rem/1.4 var(--_font-default)
+  color: var(--t-medium)
+  margin-top: 0.3rem
+  a
+    font-weight: 700
+    color: var(--t-bright)
+
+.resume-lines__descr
+  color: var(--t-medium)
+  margin-top: 2rem
+  +MQ(M)
+    margin-top: 0

@@ -1,0 +1,133 @@
+.header
+  position: fixed
+  +center(x)
+  bottom: 1.5rem
+  width: auto
+  height:4.4rem
+  border-radius: 2rem
+  background-color: rgba(0, 0, 0, 0.03)
+  backdrop-filter: blur(10px)
+  z-index: 11
+  +MQ(M)
+    bottom: 3rem
+  +MQ(L)
+    top: 3rem
+    left: auto
+    right: 0
+    bottom: auto
+    transform: translateX(0)
+    width: calc( 100% - 330px )
+    height: 5rem
+    padding: 0 3rem
+    background-color: transparent
+    backdrop-filter: none
+  +MQ(XL)
+    padding: 0 6rem 0 3rem
+    width: calc( 100% - 360px )
+  +MQ(XXL)
+    top: 5rem
+    width: calc( 100% - 480px )
+    padding: 0 8rem 0 5rem
+  +MQ(XXXL)
+    width: calc( 100% - 500px )
+    height: 6rem
+    padding: 0 10rem 0 5rem
+
+.header__navigation
+
+.header__controls
+  +MQ(L)
+    .btn
+      margin-right: 1rem
+      &:last-child
+        margin-right: 0
+
+.header__trigger
+  width: 4.4rem
+  height: 4.4rem
+  font-size: 1.6rem
+  white-space: nowrap
+  &::before
+    content: ""
+    display: block
+    +position(absolute, 0 null null 0)
+    width: 100%
+    height: 100%
+    +gradient-btn
+    border-radius: 2rem
+    transform: scale3d(1,1,1)
+    will-change: transform
+    transition: transform 0.3s var(--_animbezier)
+  i, span
+    display: block
+    position: relative
+    line-height: 4.4rem
+    color: var(--t-opp-bright)
+    overflow: hidden
+    transition: .3s
+  i
+    font-size: 1.8rem
+  span
+    display: none
+  +MQ(L)
+    width: auto
+    height: 5rem
+    padding: 0 2rem
+    font: normal 700 var(--_size)/5rem var(--_font-default)
+    &::before
+      border-radius: var(--_radius-m)
+    i, span
+      line-height: 5rem
+      color: rgba(0,0,0,0.0)
+      text-shadow: 0 0 var(--t-opp-bright), 0 5rem var(--t-opp-bright)
+    span
+      display: block
+    i
+      margin-left: 0.6rem
+  +MQ(XL)
+    .no-touch &:hover
+      &::before
+        transform: scale3d(1.03,1.03,1.03)
+      i, span
+        text-shadow: 0 -5rem var(--t-opp-bright), 0 0 var(--t-opp-bright)
+  +MQ(XXXL)
+    height: 6rem
+    line-height: 6rem
+    padding: 0 2.4rem
+    font-size: 2rem
+    i, span
+      line-height: 6rem
+      text-shadow: 0 0 var(--t-opp-bright), 0 6rem var(--t-opp-bright)
+    i
+      font-size: 2.2rem
+    .no-touch &:hover
+      i, span
+        text-shadow: 0 -6rem var(--t-opp-bright), 0 0 var(--t-opp-bright)
+  
+.trigger__caption
+  display: none
+  +MQ(L)
+    display: inline
+
+.header__switcher
+  width: 4.4rem
+  height: 4.4rem
+  border-radius: 2rem
+  color: var(--t-muted)
+  font-size: 1.6rem
+  transition: all 0.3s ease-in-out
+  +MQ(L)
+    width: 5rem
+    height: 5rem
+    border-radius: var(--_radius-m)
+    backdrop-filter: blur(10px)
+    i
+      position: relative
+      font-size: 1.8rem
+    .no-touch &:hover
+      color: var(--t-bright)
+  +MQ(XXXL)
+    width: 6rem
+    height: 6rem
+    i
+      font-size: 2.2rem

@@ -1,0 +1,60 @@
+.menu
+
+.menu__list
+
+.menu__item
+  display: inline-flex
+  +MQ(L)
+    margin-right: 1rem
+    &:last-child
+      margin-right: 0
+
+.menu__link
+  width: 4.4rem
+  height: 4.4rem
+  border-radius: 2rem
+  color: var(--t-disabled)
+  background-color: transparent
+  border: none
+  white-space: nowrap
+  font-size: 1.8rem
+  transition: all 0.3s ease-in-out
+  &.active
+    color: var(--t-opp-bright)
+    background-color: var(--base-opp)
+  +MQ(L)
+    width: 5rem
+    height: 5rem
+    border-radius: var(--_radius-m)
+    backdrop-filter: blur(10px)
+    margin-right: 1rem
+    border: 1px solid transparent
+    &:last-child
+      margin-right: 0
+    i
+      position: relative
+    &.active
+      background-color: transparent
+      border: 1px solid var(--stroke-controls-neutral)
+      color: var(--t-bright)
+      backdrop-filter: blur(6px)
+  +MQ(XL)
+    width: auto
+    height: 5rem
+    padding: 0 2rem
+    border-radius: var(--_radius-m)
+    font: normal 700 var(--_size)/5rem var(--_font-default)
+    i
+      display: none
+    .no-touch &:hover
+      color: var(--t-bright)
+  +MQ(XXXL)
+    height: 6rem
+    line-height: 6rem
+    padding: 0 2.4rem
+    font-size: 2rem
+
+.menu__caption
+  display: none
+  +MQ(XL)
+    display: inline

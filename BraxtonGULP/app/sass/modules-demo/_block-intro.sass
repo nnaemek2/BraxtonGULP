@@ -1,0 +1,153 @@
+.demo__intro
+  position: relative
+  width: 100%
+  min-width: 360px
+  overflow: hidden
+  +MQ(XL)
+    height: 100vh
+
+.intro__header
+  position: relative
+  padding: 1.5rem 0
+  +MQ(M)
+    padding: 3rem 0
+  +MQ(XXL)
+    padding: 5rem 0
+
+.header__container
+  padding: 0 1.5rem
+  +MQ(M)
+    padding: 0 6rem
+  +MQ(XL)
+    padding: 0 6rem
+  +MQ(XXL)
+    padding: 0 8rem
+  +MQ(XXXL)
+    padding: 0 10rem
+
+.header__logo
+  position: relative
+  height: 50px
+
+.logo__image
+  width: 5rem
+  height: 5rem
+  svg
+    width: 100%
+    height: auto
+  +MQ(XXXL)
+    width: 60px
+    height: 60px
+
+.logo__caption
+  padding-left: 1.4rem
+  p
+    font: normal 700 2rem/1.1 var(--_font-accent)
+    color: var(--t-bright)
+  +MQ(XXXL)
+    p
+      font-size: 2.4rem
+
+.intro__content
+  position: relative
+  padding-top: 8.5rem
+  +MQ(M)
+    padding-top: 9rem
+  +MQ(XL)
+    +position(absolute, 0 null null 0)
+    width: 100%
+    height: 100%
+    padding-top: 0
+  +MQ(XXXL)
+    padding: 0 8rem
+
+.promo-image
+  position: relative
+  +MQ(XL)
+    +position(absolute, 0 null null 0)
+    width: 100%
+    height: 100%
+    z-index: 1
+    img
+      +position(absolute, -20px -160px null null)
+      width: auto
+      height: calc( 100% + 20px )
+  +MQ(XXL)
+    img
+      right: -320px
+  +MQ(XXXL)
+    img
+      right: -160px
+
+.headline
+  position: relative
+  padding: 0 1.5rem
+  margin-bottom: 10rem
+  +MQ(M)
+    padding: 0 6rem
+    margin-bottom: 12rem
+  +MQ(XL)
+    position: absolute
+    left: 0
+    +center(y)
+    margin-bottom: 0
+    z-index: 2
+  +MQ(XXL)
+    padding: 0 8rem
+  +MQ(XXXL)
+    padding: 0 10rem
+
+.headline__title
+
+.headline__btnholder
+
+.marquee
+  position: relative
+  height: 5rem
+  line-height: 5rem
+  background-color: #0f0f0f
+  +gradient-btn
+  color: var(--t-opp-bright)
+  font-weight: 700
+  font-size: 1.6rem
+  overflow: hidden
+  z-index: 2
+  +MQ(XL)
+    +position(absolute, null null 0 0)
+  +MQ(XXXL)
+    height: 6rem
+    line-height: 6rem
+    font-size: 2rem
+
+.marquee__inner
+  display: flex
+  width: fit-content
+  flex: auto
+  flex-direction: row
+
+.marquee__part
+  display: flex
+  align-items: center
+  flex-shrink: 0
+
+.star
+  display: flex
+  justify-content: center
+  align-items: center
+  width: 18px
+  height: 18px
+  margin: 0 1em
+  transform: rotate(90deg)
+  transition: all 1s cubic-bezier(0.075, 0.82, 0.165, 1)
+  i
+    display: inline-flex
+    position: relative
+    font-size: 1.8rem
+  &.active
+    transform: rotate(-90deg)
+    transition: all 1s cubic-bezier(0.075, 0.82, 0.165, 1)
+  +MQ(XXXL)
+    width: 22px
+    height: 22px
+    i
+      font-size: 2.2rem
